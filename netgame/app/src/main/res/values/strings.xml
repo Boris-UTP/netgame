@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NetGame</string>
+
+    <string-array name="typeUserSpinner">
+        <item>Gamer</item>
+        <item>Cabin</item>
+    </string-array>
+</resources>
