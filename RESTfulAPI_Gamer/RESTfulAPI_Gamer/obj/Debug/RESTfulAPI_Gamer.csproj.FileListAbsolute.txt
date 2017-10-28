@@ -1,0 +1,318 @@
+C:\Users\MIGUEL_PC\Desktop\RESTful API Gamer\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\RESTfulAPI_Gamer.dll
+C:\Users\MIGUEL_PC\Desktop\RESTful API Gamer\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\RESTfulAPI_Gamer.pdb
+C:\Users\MIGUEL_PC\Desktop\RESTful API Gamer\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\Antlr3.Runtime.dll
+C:\Users\MIGUEL_PC\Desktop\RESTful API Gamer\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\EntityFramework.dll
+C:\Users\MIGUEL_PC\Desktop\RESTful API Gamer\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\MIGUEL_PC\Desktop\RESTful API Gamer\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\Newtonsoft.Json.dll
+C:\Users\MIGUEL_PC\Desktop\RESTful API Gamer\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Helpers.dll
+C:\Users\MIGUEL_PC\Desktop\RESTful API Gamer\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Mvc.dll
+C:\Users\MIGUEL_PC\Desktop\RESTful API Gamer\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Optimization.dll
+C:\Users\MIGUEL_PC\Desktop\RESTful API Gamer\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Providers.dll
+C:\Users\MIGUEL_PC\Desktop\RESTful API Gamer\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Razor.dll
+C:\Users\MIGUEL_PC\Desktop\RESTful API Gamer\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.Deployment.dll
+C:\Users\MIGUEL_PC\Desktop\RESTful API Gamer\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.dll
+C:\Users\MIGUEL_PC\Desktop\RESTful API Gamer\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.Razor.dll
+C:\Users\MIGUEL_PC\Desktop\RESTful API Gamer\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\WebGrease.dll
+C:\Users\MIGUEL_PC\Desktop\RESTful API Gamer\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\EntityFramework.xml
+C:\Users\MIGUEL_PC\Desktop\RESTful API Gamer\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\Newtonsoft.Json.xml
+C:\Users\MIGUEL_PC\Desktop\RESTful API Gamer\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Helpers.xml
+C:\Users\MIGUEL_PC\Desktop\RESTful API Gamer\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Mvc.xml
+C:\Users\MIGUEL_PC\Desktop\RESTful API Gamer\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Razor.xml
+C:\Users\MIGUEL_PC\Desktop\RESTful API Gamer\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.xml
+C:\Users\MIGUEL_PC\Desktop\RESTful API Gamer\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.Deployment.xml
+C:\Users\MIGUEL_PC\Desktop\RESTful API Gamer\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.Razor.xml
+C:\Users\MIGUEL_PC\Desktop\RESTful API Gamer\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\EntityFramework.resources.dll
+C:\Users\MIGUEL_PC\Desktop\RESTful API Gamer\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Helpers.resources.dll
+C:\Users\MIGUEL_PC\Desktop\RESTful API Gamer\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Mvc.resources.dll
+C:\Users\MIGUEL_PC\Desktop\RESTful API Gamer\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Optimization.resources.dll
+C:\Users\MIGUEL_PC\Desktop\RESTful API Gamer\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Providers.resources.dll
+C:\Users\MIGUEL_PC\Desktop\RESTful API Gamer\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Razor.resources.dll
+C:\Users\MIGUEL_PC\Desktop\RESTful API Gamer\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.WebPages.resources.dll
+C:\Users\MIGUEL_PC\Desktop\RESTful API Gamer\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\MIGUEL_PC\Desktop\RESTful API Gamer\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\MIGUEL_PC\Desktop\RESTful API Gamer\RESTfulAPI_Gamer\RESTfulAPI_Gamer\obj\Debug\RESTfulAPI_Gamer.dll
+C:\Users\MIGUEL_PC\Desktop\RESTful API Gamer\RESTfulAPI_Gamer\RESTfulAPI_Gamer\obj\Debug\RESTfulAPI_Gamer.pdb
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\RESTfulAPI_Gamer.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\RESTfulAPI_Gamer.pdb
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\Antlr3.Runtime.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\EntityFramework.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\Newtonsoft.Json.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Helpers.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Mvc.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Optimization.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Providers.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Razor.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.Deployment.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.Razor.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\WebGrease.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\EntityFramework.xml
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\Newtonsoft.Json.xml
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Helpers.xml
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Mvc.xml
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Razor.xml
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.xml
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.Deployment.xml
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.Razor.xml
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\EntityFramework.resources.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Helpers.resources.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Mvc.resources.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Optimization.resources.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Providers.resources.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Razor.resources.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.WebPages.resources.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\obj\Debug\RESTfulAPI_Gamer.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\obj\Debug\RESTfulAPI_Gamer.pdb
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\RESTfulAPI_Gamer.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\RESTfulAPI_Gamer.pdb
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\Antlr3.Runtime.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\EntityFramework.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\Newtonsoft.Json.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Helpers.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Mvc.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Optimization.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Providers.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Razor.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.Deployment.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.Razor.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\WebGrease.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\EntityFramework.xml
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\Newtonsoft.Json.xml
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Helpers.xml
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Mvc.xml
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Razor.xml
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.xml
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.Deployment.xml
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.Razor.xml
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\EntityFramework.resources.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Helpers.resources.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Mvc.resources.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Optimization.resources.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Providers.resources.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Razor.resources.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.WebPages.resources.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\obj\Debug\RESTfulAPI_Gamer.csprojResolveAssemblyReference.cache
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\obj\Debug\RESTfulAPI_Gamer.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Android\RESTfulAPI_Gamer\RESTfulAPI_Gamer\obj\Debug\RESTfulAPI_Gamer.pdb
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\obj\Debug\RESTfulAPI_Gamer.csprojResolveAssemblyReference.cache
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\obj\Debug\RESTfulAPI_Gamer.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\RESTfulAPI_Gamer.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\RESTfulAPI_Gamer.pdb
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\Antlr3.Runtime.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\EntityFramework.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\Newtonsoft.Json.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Helpers.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Mvc.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Optimization.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Providers.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Razor.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.Deployment.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.Razor.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\WebGrease.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\EntityFramework.xml
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\Newtonsoft.Json.xml
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Helpers.xml
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Mvc.xml
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Razor.xml
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.xml
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.Deployment.xml
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.Razor.xml
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\EntityFramework.resources.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Helpers.resources.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Mvc.resources.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Optimization.resources.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Providers.resources.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Razor.resources.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.WebPages.resources.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\MIGUEL_PC\Desktop\Rest Full Api Androide\RESTfulAPI_Gamer\RESTfulAPI_Gamer\obj\Debug\RESTfulAPI_Gamer.pdb
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\obj\Debug\RESTfulAPI_Gamer.csprojResolveAssemblyReference.cache
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\obj\Debug\RESTfulAPI_Gamer.dll
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\RESTfulAPI_Gamer.dll
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\RESTfulAPI_Gamer.pdb
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\Antlr3.Runtime.dll
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\EntityFramework.dll
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\Newtonsoft.Json.dll
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Helpers.dll
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Mvc.dll
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Optimization.dll
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Providers.dll
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Razor.dll
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.Deployment.dll
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.dll
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.Razor.dll
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\WebGrease.dll
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\EntityFramework.xml
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\Newtonsoft.Json.xml
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Helpers.xml
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Mvc.xml
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Razor.xml
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.xml
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.Deployment.xml
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.Razor.xml
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\EntityFramework.resources.dll
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Helpers.resources.dll
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Mvc.resources.dll
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Optimization.resources.dll
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Providers.resources.dll
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Razor.resources.dll
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.WebPages.resources.dll
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\MIGUEL_PC\Desktop\RestFul F\RESTfulAPI_Gamer\RESTfulAPI_Gamer\obj\Debug\RESTfulAPI_Gamer.pdb
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\RESTfulAPI_Gamer.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\RESTfulAPI_Gamer.pdb
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\Antlr3.Runtime.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\EntityFramework.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\Newtonsoft.Json.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.ComponentModel.DataAnnotations.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Configuration.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Data.Entity.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Drawing.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Net.Http.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Net.Http.Formatting.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Net.Http.WebRequest.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Runtime.Serialization.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Security.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Abstractions.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.ApplicationServices.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Entity.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Helpers.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Http.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Http.WebHost.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Mvc.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Optimization.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Providers.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Razor.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Routing.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.Deployment.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.Razor.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Xml.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Xml.Linq.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\WebGrease.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Http.xml
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Http.WebHost.xml
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\EntityFramework.xml
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\Newtonsoft.Json.xml
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Net.Http.Formatting.xml
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Helpers.xml
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Mvc.xml
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Razor.xml
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.xml
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.Deployment.xml
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.Razor.xml
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Http.resources.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\EntityFramework.resources.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Helpers.resources.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Mvc.resources.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Optimization.resources.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Providers.resources.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Razor.resources.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.WebPages.resources.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\obj\Debug\RESTfulAPI_Gamer.dll
+C:\Users\MIGUEL_PC\Downloads\RestFul Api Andr\RESTfulAPI_Gamer\RESTfulAPI_Gamer\obj\Debug\RESTfulAPI_Gamer.pdb
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\RESTfulAPI_Gamer.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\RESTfulAPI_Gamer.pdb
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\Antlr3.Runtime.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\EntityFramework.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\Microsoft.Web.Infrastructure.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\Newtonsoft.Json.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.ComponentModel.DataAnnotations.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Configuration.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Data.Entity.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Drawing.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Net.Http.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Net.Http.Formatting.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Net.Http.WebRequest.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Runtime.Serialization.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Security.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Abstractions.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.ApplicationServices.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Entity.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Helpers.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Http.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Http.WebHost.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Mvc.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Optimization.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Providers.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Razor.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Routing.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.Deployment.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.Razor.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Xml.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Xml.Linq.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\WebGrease.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Http.xml
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Http.WebHost.xml
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\EntityFramework.xml
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\Newtonsoft.Json.xml
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Net.Http.Formatting.xml
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Helpers.xml
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Mvc.xml
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Razor.xml
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.xml
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.Deployment.xml
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.WebPages.Razor.xml
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Http.resources.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Http.WebHost.resources.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\EntityFramework.resources.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Net.Http.Formatting.resources.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Helpers.resources.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Mvc.resources.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Optimization.resources.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Providers.resources.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Razor.resources.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.WebPages.resources.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\obj\Debug\RESTfulAPI_Gamer.dll
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\obj\Debug\RESTfulAPI_Gamer.pdb
+D:\RESTfulAPI_Gamer\RESTfulAPI_Gamer\obj\Debug\RESTfulAPI_Gamer.csprojResolveAssemblyReference.cache
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.ComponentModel.DataAnnotations.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Configuration.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Data.Entity.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Drawing.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Net.Http.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Net.Http.Formatting.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Net.Http.WebRequest.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Runtime.Serialization.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Security.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Abstractions.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.ApplicationServices.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Entity.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Http.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Http.WebHost.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Routing.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Xml.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Xml.Linq.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Http.xml
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Web.Http.WebHost.xml
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\System.Net.Http.Formatting.xml
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Http.resources.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\MIGUEL_PC\Desktop\RESTfulAPI_Gamer\RESTfulAPI_Gamer\obj\Debug\RESTfulAPI_Gamer.csprojResolveAssemblyReference.cache
