@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">NetGame</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="typeUserSpinner">
+        <item>Gamer</item>
+        <item>Cabin</item>
+    </string-array>
+    <string name="title_activity_main">MainActivity</string>
+</resources>
