@@ -7,5 +7,6 @@ package com.netgame.netgame.network;
 public class NetGameApiService {
 
     public static final String AUTHENTICATE_URL = "http://www.netgame.somee.com/v1/api/authorize";
+    public static final String GAMES_URL = "http://www.netgame.somee.com/v1/api/games";
 
 }

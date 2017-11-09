@@ -43,6 +43,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        tag = getResources().getString(R.string.app_name);
         gson = new Gson();
 
         progressDialog = new ProgressDialog(this);
