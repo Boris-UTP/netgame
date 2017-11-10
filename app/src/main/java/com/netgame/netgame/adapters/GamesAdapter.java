@@ -1,5 +1,6 @@
 package com.netgame.netgame.adapters;
 
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.netgame.netgame.R;
+import com.netgame.netgame.activities.PublicationActivity;
 import com.netgame.netgame.models.Game;
 
 import java.util.List;
@@ -35,14 +37,17 @@ public class GamesAdapter extends RecyclerView.Adapter<GamesAdapter.ViewHolder> 
     }
 
     @Override
-    public void onBindViewHolder(final ViewHolder holder, int position) {
+    public void onBindViewHolder(final ViewHolder holder, final int position) {
         Game game = games.get(position);
         holder.gameTitleTextView.setText(game.getName());
         // holder.setGameImageView(game.getId());
         holder.gameImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(view.getContext(), "Hola", Toast.LENGTH_SHORT).show();
+                Game game = games.get(position);
+                Intent intent = new Intent(view.getContext(), PublicationActivity.class);
+                intent.putExtras(game.toBundle());
+                view.getContext().startActivity(intent);
             }
         });
     }

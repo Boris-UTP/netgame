@@ -1,6 +1,10 @@
 package com.netgame.netgame.models;
 
+import android.os.Bundle;
+
 import com.google.gson.annotations.SerializedName;
+
+import org.json.JSONObject;
 
 /**
  * Created by arkanay on 9/11/17.
@@ -43,4 +47,21 @@ public class Game {
         this.image = image;
         return this;
     }
+
+    public static Game from (Bundle bundle){
+        Game game = new Game();
+        game.setId(bundle.getInt("id"))
+                .setName(bundle.getString("name"))
+                .setImage(bundle.getString("image"));
+        return game;
+    }
+
+    public Bundle toBundle (){
+        Bundle bundle = new Bundle();
+        bundle.putInt("idGame", id);
+        bundle.putString("name", name);
+        bundle.putString("image", image);
+        return bundle;
+    }
+
 }
