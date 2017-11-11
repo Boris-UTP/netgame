@@ -12,12 +12,14 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.androidnetworking.AndroidNetworking;
+import com.androidnetworking.common.Priority;
 import com.androidnetworking.error.ANError;
 import com.androidnetworking.interfaces.JSONObjectRequestListener;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.netgame.netgame.R;
 import com.netgame.netgame.adapters.GamesAdapter;
+import com.netgame.netgame.commons.PreferencesEditor;
 import com.netgame.netgame.models.Base;
 import com.netgame.netgame.models.Game;
 
@@ -39,8 +41,6 @@ public class HomeFragment extends Fragment {
     private List<Game> games;
 
     private String tag;
-    private String token = "CEi5AtrgdYfEXmx9OIt/gOYF7ruWaUbRLOZYeGufYboB0gYUCS5xRs2pBwHVHNIlZAMcAWpb1kIWn9AuQollIZmgxAKaL71VJonLSWvtFvjz+DZo5Sg4aU6Atd8DMK6/90r6PV/5dw/1MS17JsUQwpkBU/iFMevheszJKWlJdLI=";
-
     private Gson gson;
 
     private ProgressDialog progressDialog;
@@ -76,8 +76,9 @@ public class HomeFragment extends Fragment {
     private void getGames() {
         AndroidNetworking
                 .get(GAMES_URL)
-                .addHeaders("token", token)
+                .addHeaders("token", PreferencesEditor.getStringPreference(getActivity(), "token", ""))
                 .setTag(tag)
+                .setPriority(Priority.LOW)
                 .build()
                 .getAsJSONObject(new JSONObjectRequestListener() {
                     @Override

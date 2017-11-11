@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.androidnetworking.widget.ANImageView;
 import com.netgame.netgame.R;
 import com.netgame.netgame.activities.PublicationActivity;
 import com.netgame.netgame.models.Game;
@@ -40,8 +41,12 @@ public class GamesAdapter extends RecyclerView.Adapter<GamesAdapter.ViewHolder> 
     public void onBindViewHolder(final ViewHolder holder, final int position) {
         Game game = games.get(position);
         holder.gameTitleTextView.setText(game.getName());
-        // holder.setGameImageView(game.getId());
-        holder.gameImageView.setOnClickListener(new View.OnClickListener() {
+
+        holder.pictureANImageView.setDefaultImageResId(R.drawable.ic_launcher_background);
+        holder.pictureANImageView.setErrorImageResId(R.drawable.ic_launcher_background);
+        holder.pictureANImageView.setImageUrl(game.getImage());
+
+        holder.pictureANImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Game game = games.get(position);
@@ -59,12 +64,12 @@ public class GamesAdapter extends RecyclerView.Adapter<GamesAdapter.ViewHolder> 
 
     public class ViewHolder extends RecyclerView.ViewHolder{
 
-        private ImageView  gameImageView;
+        private ANImageView pictureANImageView;
         private TextView gameTitleTextView;
 
         public ViewHolder(View itemView) {
             super(itemView);
-            gameImageView = (ImageView) itemView.findViewById(R.id.gameImageView);
+            pictureANImageView = itemView.findViewById(R.id.pictureANImageView);
             gameTitleTextView = (TextView) itemView.findViewById(R.id.titleGameTextView);
 
 

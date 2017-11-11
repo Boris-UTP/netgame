@@ -12,11 +12,13 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.androidnetworking.AndroidNetworking;
+import com.androidnetworking.common.Priority;
 import com.androidnetworking.error.ANError;
 import com.androidnetworking.interfaces.JSONObjectRequestListener;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.netgame.netgame.R;
+import com.netgame.netgame.commons.PreferencesEditor;
 import com.netgame.netgame.models.Authenticate;
 import com.netgame.netgame.models.Base;
 
@@ -83,6 +85,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 .addBodyParameter("userName",userEditText.getText().toString())
                 .addBodyParameter("password",passwordEditText.getText().toString())
                 .setTag(tag)
+                .setPriority(Priority.LOW)
                 .build()
                 .getAsJSONObject(new JSONObjectRequestListener() {
                     @Override
@@ -90,6 +93,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                         Base<List<Authenticate>> authenticate = gson.fromJson(response.toString(), new TypeToken<Base<List<Authenticate>>>(){}.getType());
                         progressDialog.dismiss();
                         if (authenticate.getStatusBody().getCode().equalsIgnoreCase("0")){
+
+                            PreferencesEditor.savePreference(getApplicationContext(),"token", authenticate.getData().get(0).getToken());
+
                             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                             startActivity(intent);
                         } else {

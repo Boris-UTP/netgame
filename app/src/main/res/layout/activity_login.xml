@@ -70,7 +70,7 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:hint="User"
-        android:text="PedroZx"
+        android:text="Juanza"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contentOptionsLinearLayout" />
@@ -81,7 +81,7 @@
         android:layout_height="wrap_content"
         android:hint="Password"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="PedroZx@"
+        android:text="ju@n999"
         android:inputType="textPassword"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/userEditText" />

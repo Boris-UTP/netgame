@@ -1,5 +1,7 @@
 package com.netgame.netgame.models;
 
+import android.os.Bundle;
+
 import com.google.gson.annotations.SerializedName;
 
 /**
@@ -8,13 +10,16 @@ import com.google.gson.annotations.SerializedName;
 
 public class Publication {
 
-    @SerializedName("title")
+    @SerializedName("idPublication")
+    private int id;
+
+    @SerializedName("Title")
     private String title;
 
-    @SerializedName("description")
+    @SerializedName("Description")
     private String description;
 
-    @SerializedName("dateRegister")
+    @SerializedName("DateRegister")
     private String dateRegister;
 
     @SerializedName("like")
@@ -22,6 +27,20 @@ public class Publication {
 
     @SerializedName("favorite")
     private Boolean favorite;
+
+    public Publication() {
+        this.like = true;
+        this.favorite = false;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public Publication setId(int id) {
+        this.id = id;
+        return this;
+    }
 
     public String getTitle() {
         return title;
@@ -67,4 +86,22 @@ public class Publication {
         this.favorite = favorite;
         return this;
     }
+
+    public Bundle toBundle() {
+        Bundle bundle = new Bundle();
+        bundle.putInt("idPublication", id);
+        bundle.putString("title", title);
+        bundle.putString("description", description);
+        return bundle;
+    }
+
+    public static Publication from(Bundle bundle){
+
+        Publication publication = new Publication();
+        publication.setTitle(bundle.getString("title"))
+                .setId(bundle.getInt("idPublication"))
+                .setDescription(bundle.getString("description"));
+        return publication;
+    }
+
 }

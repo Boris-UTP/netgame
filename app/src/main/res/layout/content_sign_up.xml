@@ -23,6 +23,7 @@
         android:layout_width="@dimen/sign_in_width_edit_text"
         android:layout_height="wrap_content"
         android:hint="Password"
+        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/usernameEditText" />
@@ -32,18 +33,10 @@
         android:layout_width="@dimen/sign_in_width_edit_text"
         android:layout_height="wrap_content"
         android:hint="Confirm password"
+        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/passwordEditText" />
-
-    <Spinner
-        android:id="@+id/typeUserSpinner"
-        android:layout_width="@dimen/sign_in_width_edit_text"
-        android:layout_height="wrap_content"
-        android:entries="@array/typeUserSpinner"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/confirmPasswordEditText" />
 
     <Button
         android:id="@+id/signUpButton"
@@ -52,6 +45,6 @@
         android:text="Sign up"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/typeUserSpinner" />
+        app:layout_constraintTop_toBottomOf="@id/confirmPasswordEditText" />
 
 </android.support.constraint.ConstraintLayout>

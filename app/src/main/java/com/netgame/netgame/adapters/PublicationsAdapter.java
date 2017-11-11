@@ -1,5 +1,6 @@
 package com.netgame.netgame.adapters;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -9,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.netgame.netgame.R;
+import com.netgame.netgame.activities.DetailPublicationActivity;
 import com.netgame.netgame.models.Publication;
 
 import java.util.List;
@@ -32,11 +34,20 @@ public class PublicationsAdapter extends RecyclerView.Adapter<PublicationsAdapte
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        Publication publication = publications.get(position);
+        final Publication publication = publications.get(position);
         holder.titleTextView.setText(publication.getTitle());
         holder.descriptionTextView.setText(publication.getDescription());
         holder.setIconStartImageView(publication.getFavorite());
         holder.setIconThumbUpImageView(publication.getLike());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), DetailPublicationActivity.class);
+                intent.putExtras(publication.toBundle());
+                view.getContext().startActivity(intent);
+            }
+        });
     }
 
     @Override

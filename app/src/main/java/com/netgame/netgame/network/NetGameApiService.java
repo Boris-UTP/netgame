@@ -8,6 +8,9 @@ public class NetGameApiService {
 
     public static final String AUTHENTICATE_URL = "http://www.netgame.somee.com/v1/api/authorize";
     public static final String GAMES_URL = "http://www.netgame.somee.com/v1/api/games";
-    public static final String PUBLICATIONS_URL = "http://www.netgame.somee.com/v1/api/game/publications";
+    public static final String PUBLICATIONS_URL = "http://www.netgame.somee.com/v1/api/game/publications/%s";
+    public static final String CREATE_USER_URL = "http://www.netgame.somee.com/v1/api/user/create";
+    public static final String CREATE_PUBLICATION_URL = "http://www.netgame.somee.com/v1/api/publication/create";
+    public static final String COMMENTS_URL = "http://www.netgame.somee.com/v1/api/game/publication/%s";
 
 }

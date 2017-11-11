@@ -18,7 +18,7 @@ public class Game {
     @SerializedName("name")
     private String name;
 
-    @SerializedName("image")
+    @SerializedName("imagen")
     private String image;
 
     public int getId() {
@@ -50,7 +50,7 @@ public class Game {
 
     public static Game from (Bundle bundle){
         Game game = new Game();
-        game.setId(bundle.getInt("id"))
+        game.setId(bundle.getInt("idGame"))
                 .setName(bundle.getString("name"))
                 .setImage(bundle.getString("image"));
         return game;

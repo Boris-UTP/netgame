@@ -51,8 +51,15 @@
         <activity
             android:name=".activities.PublicationActivity"
             android:label="@string/title_activity_publication"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.CreatePublicationActivity"
+            android:label="@string/title_activity_post"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.DetailPublicationActivity"
+            android:label="@string/title_activity_detail_publication"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
