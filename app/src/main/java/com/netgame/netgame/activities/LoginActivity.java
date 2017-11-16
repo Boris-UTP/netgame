@@ -90,11 +90,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 .getAsJSONObject(new JSONObjectRequestListener() {
                     @Override
                     public void onResponse(JSONObject response) {
-                        Base<List<Authenticate>> authenticate = gson.fromJson(response.toString(), new TypeToken<Base<List<Authenticate>>>(){}.getType());
+                        Base<Authenticate> authenticate = gson.fromJson(response.toString(), new TypeToken<Base<Authenticate>>(){}.getType());
                         progressDialog.dismiss();
                         if (authenticate.getStatusBody().getCode().equalsIgnoreCase("0")){
 
-                            PreferencesEditor.savePreference(getApplicationContext(),"token", authenticate.getData().get(0).getToken());
+                            PreferencesEditor.savePreference(getApplicationContext(),"token", authenticate.getData().getToken());
 
                             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                             startActivity(intent);

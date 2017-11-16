@@ -6,45 +6,70 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.netgame.netgame.activities.SignUpActivity"
-    tools:showIn="@layout/activity_sign_up">
+    tools:showIn="@layout/activity_sign_up"
+    android:paddingTop="@dimen/default_margin">
 
-    <EditText
-        android:id="@+id/usernameEditText"
-        android:layout_width="@dimen/sign_in_width_edit_text"
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/usernameTextInputLayout"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/ic_person_outline_black_24dp"
-        android:hint="Username"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <EditText
-        android:id="@+id/passwordEditText"
-        android:layout_width="@dimen/sign_in_width_edit_text"
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="@dimen/sign_in_width_edit_text"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+            android:hint="Username" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/passwordTextInputLayout"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Password"
-        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/usernameEditText" />
+        app:layout_constraintTop_toBottomOf="@id/usernameTextInputLayout">
 
-    <EditText
-        android:id="@+id/confirmPasswordEditText"
-        android:layout_width="@dimen/sign_in_width_edit_text"
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="@dimen/sign_in_width_edit_text"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/confirmPasswordTextInputLayout"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Confirm password"
-        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/passwordEditText" />
+        app:layout_constraintTop_toBottomOf="@id/passwordTextInputLayout">
+
+        <EditText
+            android:id="@+id/confirmPasswordEditText"
+            android:layout_width="@dimen/sign_in_width_edit_text"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+            android:hint="Confirm password"
+            android:inputType="textPassword" />
+
+    </android.support.design.widget.TextInputLayout>
 
     <Button
         android:id="@+id/signUpButton"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="Sign up"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/confirmPasswordEditText" />
+        app:layout_constraintTop_toBottomOf="@id/confirmPasswordTextInputLayout" />
 
 </android.support.constraint.ConstraintLayout>

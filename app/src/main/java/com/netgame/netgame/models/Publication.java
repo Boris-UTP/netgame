@@ -13,13 +13,13 @@ public class Publication {
     @SerializedName("idPublication")
     private int id;
 
-    @SerializedName("Title")
+    @SerializedName("title")
     private String title;
 
-    @SerializedName("Description")
+    @SerializedName("description")
     private String description;
 
-    @SerializedName("DateRegister")
+    @SerializedName("dateRegister")
     private String dateRegister;
 
     @SerializedName("like")

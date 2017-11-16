@@ -2,13 +2,15 @@
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="5dp">
+    android:layout_height="wrap_content">
 
     <android.support.constraint.ConstraintLayout
+        android:paddingLeft="@dimen/default_margin"
+        android:paddingRight="@dimen/default_margin"
+        android:paddingTop="24dp"
+        android:paddingBottom="24dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp">
+        android:layout_height="wrap_content">
 
         <TextView
             android:id="@+id/titleTextView"
@@ -19,6 +21,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:layout_marginTop="@dimen/default_margin"
             android:id="@+id/descriptionTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -27,6 +30,7 @@
             app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
 
         <ImageView
+            android:layout_marginTop="@dimen/default_margin"
             android:id="@+id/iconDateImageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -35,6 +39,8 @@
             app:layout_constraintTop_toBottomOf="@+id/descriptionTextView" />
 
         <TextView
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginLeft="@dimen/default_margin"
             android:id="@+id/dateTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -43,6 +49,7 @@
             app:layout_constraintTop_toBottomOf="@+id/descriptionTextView" />
 
         <ImageView
+            android:layout_marginTop="@dimen/default_margin"
             android:id="@+id/iconThumbUpImageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -51,6 +58,8 @@
             app:layout_constraintTop_toBottomOf="@+id/descriptionTextView" />
 
         <ImageView
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginRight="@dimen/default_margin"
             android:id="@+id/iconStartImageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
