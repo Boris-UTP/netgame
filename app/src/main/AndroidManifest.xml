@@ -59,6 +59,10 @@
         <activity
             android:name=".activities.DetailPublicationActivity"
             android:label="@string/title_activity_detail_publication"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.CreateEventActivity"
+            android:label="@string/title_activity_create_event"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

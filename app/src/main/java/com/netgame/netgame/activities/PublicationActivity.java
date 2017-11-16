@@ -92,7 +92,7 @@ public class PublicationActivity extends AppCompatActivity implements View.OnCli
     private List<Fragment> buildFragments() {
         List<Fragment> fragmentList = new ArrayList<>();
         fragmentList.add(new PublicationsFragment().newInstance(game));
-        fragmentList.add(new EventsFragment());
+        fragmentList.add(new EventsFragment().newInstance(game));
         return fragmentList;
     }
 
@@ -130,11 +130,12 @@ public class PublicationActivity extends AppCompatActivity implements View.OnCli
     public void onClick(View view) {
         switch (tabLayout.getSelectedTabPosition()) {
             case 0:
-                Intent intent = new Intent(getApplicationContext(), CreatePublicationActivity.class);
-                startActivityForResult(intent, 0);
+                Intent intentPublication = new Intent(getApplicationContext(), CreatePublicationActivity.class);
+                startActivityForResult(intentPublication, 0);
                 break;
             case 1:
-                Toast.makeText(getApplicationContext(), "1", Toast.LENGTH_SHORT).show();
+                Intent intentEvent = new Intent(getApplicationContext(), CreateEventActivity.class);
+                startActivityForResult(intentEvent, 0);
                 break;
         }
         /* if (onFloatingActionButtonClickListener != null)
