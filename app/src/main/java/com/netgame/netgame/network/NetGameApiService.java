@@ -12,6 +12,6 @@ public class NetGameApiService {
     public static final String CREATE_USER_URL = "http://www.netgame.somee.com/v1/api/user/create";
     public static final String CREATE_PUBLICATION_URL = "http://www.netgame.somee.com/v1/api/publication/create";
     public static final String COMMENTS_URL = "http://www.netgame.somee.com/v1/api/game/publication/%s";
-    public static final String EVENTS_URL = "http://www.netgame.somee.com/v1/api/game/event/%s";
+    public static final String EVENTS_URL = "http://www.netgame.somee.com/v1/api/game/events/%s";
 
 }

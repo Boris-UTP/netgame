@@ -84,14 +84,14 @@ public class PublicationsAdapter extends RecyclerView.Adapter<PublicationsAdapte
 
         }
 
-        public void setIconStartImageView(Boolean state) {
-            if (state) {
+        public void setIconStartImageView(int state) {
+            if (state == 1) {
                 iconStartImageView.setColorFilter(Color.argb(255, 255, 255, 0));
             }
         }
 
-        public void setIconThumbUpImageView(Boolean state){
-            if (state) {
+        public void setIconThumbUpImageView(int state){
+            if (state == 1) {
                 iconThumbUpImageView.setColorFilter(Color.argb(0, 0, 255, 0));
             }
         }

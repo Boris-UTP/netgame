@@ -84,7 +84,7 @@ public class EventsFragment extends Fragment implements SwipeRefreshLayout.OnRef
         refreshSwipeRefreshLayout.post(new Runnable() {
             @Override
             public void run() {
-                // getEvents();
+                getEvents();
             }
         });
 

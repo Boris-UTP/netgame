@@ -8,6 +8,9 @@ import com.google.gson.annotations.SerializedName;
 
 public class Event {
 
+    @SerializedName("idEvent")
+    private int idEvent;
+
     @SerializedName("title")
     private String title;
 
@@ -76,6 +79,15 @@ public class Event {
 
     public Event setAddress(String address) {
         this.address = address;
+        return this;
+    }
+
+    public int getIdEvent() {
+        return idEvent;
+    }
+
+    public Event setIdEvent(int idEvent) {
+        this.idEvent = idEvent;
         return this;
     }
 }

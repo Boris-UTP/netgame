@@ -22,15 +22,14 @@ public class Publication {
     @SerializedName("dateRegister")
     private String dateRegister;
 
-    @SerializedName("like")
-    private Boolean like;
+    @SerializedName("mylike")
+    private int like;
 
     @SerializedName("favorite")
-    private Boolean favorite;
+    private int favorite;
 
     public Publication() {
-        this.like = true;
-        this.favorite = false;
+
     }
 
     public int getId() {
@@ -69,20 +68,20 @@ public class Publication {
         return this;
     }
 
-    public Boolean getLike() {
+    public int getLike() {
         return like;
     }
 
-    public Publication setLike(Boolean like) {
+    public Publication setLike(int like) {
         this.like = like;
         return this;
     }
 
-    public Boolean getFavorite() {
+    public int getFavorite() {
         return favorite;
     }
 
-    public Publication setFavorite(Boolean favorite) {
+    public Publication setFavorite(int favorite) {
         this.favorite = favorite;
         return this;
     }

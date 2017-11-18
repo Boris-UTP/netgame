@@ -29,7 +29,9 @@ import com.netgame.netgame.commons.PreferencesEditor;
 import com.netgame.netgame.models.Base;
 import com.netgame.netgame.models.Comment;
 import com.netgame.netgame.models.Publication;
+import com.netgame.netgame.models.PublicationComments;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -125,14 +127,12 @@ public class DetailPublicationActivity extends AppCompatActivity implements Swip
                 .getAsJSONObject(new JSONObjectRequestListener() {
                     @Override
                     public void onResponse(JSONObject response) {
-                        Base<List<List<Comment>>> comments = gson.fromJson(response.toString(), new TypeToken<Base<List<List<Comment>>>>() {
-                        }.getType());
-
-                        if (comments.getStatusBody().getCode().equals("0")){
-                            commentsAdapter.setComments(comments.getData().get(0));
+                        Base<PublicationComments> responseObject = gson.fromJson(response.toString(), new TypeToken<Base<PublicationComments>>(){}.getType());
+                        if (responseObject.getStatusBody().getCode().equals("0")){
+                            commentsAdapter.setComments(responseObject.getData().getComments());
                             commentsAdapter.notifyDataSetChanged();
                         } else {
-                            Toast.makeText(getApplicationContext(), comments.getStatusBody().getMessage(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), responseObject.getStatusBody().getMessage(), Toast.LENGTH_SHORT).show();
                         }
                         commentsSwipeRefreshLayout.setRefreshing(false);
                     }
