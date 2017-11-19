@@ -21,6 +21,7 @@ import com.google.gson.Gson;
 import com.netgame.netgame.R;
 import com.netgame.netgame.commons.PreferencesEditor;
 import com.netgame.netgame.models.Base;
+import com.netgame.netgame.models.Game;
 
 import org.json.JSONObject;
 
@@ -36,6 +37,8 @@ public class CreatePublicationActivity extends AppCompatActivity implements View
     private String tag;
     private Gson gson;
 
+    private Game game;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +47,8 @@ public class CreatePublicationActivity extends AppCompatActivity implements View
 
         tag = getResources().getString(R.string.app_name);
         gson = new Gson();
+
+        game = Game.from(getIntent().getExtras());
 
         titleEditText = findViewById(R.id.titleEditText);
         descriptionEditText = findViewById(R.id.descriptionEditText);
@@ -78,6 +83,7 @@ public class CreatePublicationActivity extends AppCompatActivity implements View
                 .addHeaders("token", PreferencesEditor.getStringPreference(this, "token", ""))
                 .addBodyParameter("Title", titleEditText.getText().toString())
                 .addBodyParameter("Description", descriptionEditText.getText().toString())
+                .addBodyParameter("idGame", String.valueOf(game.getId()))
                 .setTag(tag)
                 .setPriority(Priority.LOW)
                 .build()

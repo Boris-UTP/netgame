@@ -131,6 +131,7 @@ public class PublicationActivity extends AppCompatActivity implements View.OnCli
         switch (tabLayout.getSelectedTabPosition()) {
             case 0:
                 Intent intentPublication = new Intent(getApplicationContext(), CreatePublicationActivity.class);
+                intentPublication.putExtras(game.toBundle());
                 startActivityForResult(intentPublication, 0);
                 break;
             case 1:

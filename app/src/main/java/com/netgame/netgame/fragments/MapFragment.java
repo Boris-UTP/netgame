@@ -102,6 +102,16 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
 
         mMap = googleMap;
 
+        for (int i = 0; i < userCabins.size(); i++) {
+            UserCabin userCabin = userCabins.get(i);
+            mMap.addMarker(new MarkerOptions()
+                    .position(new LatLng(userCabin.getLatitude(), userCabin.getLongitude()))
+                    .title(userCabin.getName())
+            );
+
+        }
+
+
         if (ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
             //    ActivityCompat#requestPermissions
@@ -206,7 +216,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        switch (requestCode){
+        switch (requestCode) {
             case PERMISSIONS_ACCESS_LOCATION_TASK:
                 break;
         }
