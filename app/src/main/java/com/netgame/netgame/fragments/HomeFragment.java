@@ -4,6 +4,7 @@ package com.netgame.netgame.fragments;
 import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -33,17 +34,17 @@ import static com.netgame.netgame.network.NetGameApiService.GAMES_URL;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class HomeFragment extends Fragment {
+public class HomeFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener {
 
     private RecyclerView gamesRecyclerView;
     private GamesAdapter gamesAdapter;
     private RecyclerView.LayoutManager gameLayoutManager;
     private List<Game> games;
 
+    private SwipeRefreshLayout refreshSwipeRefreshLayout;
+
     private String tag;
     private Gson gson;
-
-    private ProgressDialog progressDialog;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -56,11 +57,6 @@ public class HomeFragment extends Fragment {
         games = new ArrayList<>();
         gson = new Gson();
 
-        progressDialog = new ProgressDialog(getActivity());
-        progressDialog.setMessage(getResources().getString(R.string.loading));
-        progressDialog.setCanceledOnTouchOutside(false);
-        progressDialog.show();
-
         gamesRecyclerView = context.findViewById(R.id.gamesRecyclerView);
         gamesAdapter = new GamesAdapter(games);
         gameLayoutManager = new LinearLayoutManager(getActivity());
@@ -68,12 +64,21 @@ public class HomeFragment extends Fragment {
         gamesRecyclerView.setLayoutManager(gameLayoutManager);
         gamesRecyclerView.setAdapter(gamesAdapter);
 
-        getGames();
+        refreshSwipeRefreshLayout = context.findViewById(R.id.refreshSwipeRefreshLayout);
+        refreshSwipeRefreshLayout.setOnRefreshListener(this);
+        refreshSwipeRefreshLayout.setColorSchemeResources(R.color.colorPrimary);
+        refreshSwipeRefreshLayout.post(new Runnable() {
+            @Override
+            public void run() {
+                getGames();
+            }
+        });
 
         return context;
     }
 
     private void getGames() {
+        refreshSwipeRefreshLayout.setRefreshing(true);
         AndroidNetworking
                 .get(GAMES_URL)
                 .addHeaders("token", PreferencesEditor.getStringPreference(getActivity(), "token", ""))
@@ -85,21 +90,25 @@ public class HomeFragment extends Fragment {
                     public void onResponse(JSONObject response) {
                         Base<List<Game>> games = gson.fromJson(response.toString(), new TypeToken<Base<List<Game>>>() {
                         }.getType());
-                        progressDialog.dismiss();
                         if (games.getStatusBody().getCode().equalsIgnoreCase("0")) {
                             gamesAdapter.setGames(games.getData());
                             gamesAdapter.notifyDataSetChanged();
                         } else {
                             Toast.makeText(getActivity(), games.getStatusBody().getMessage(), Toast.LENGTH_SHORT).show();
                         }
-
+                        refreshSwipeRefreshLayout.setRefreshing(false);
                     }
 
                     @Override
                     public void onError(ANError anError) {
                         Toast.makeText(getActivity(), anError.getMessage(), Toast.LENGTH_SHORT).show();
+                        refreshSwipeRefreshLayout.setRefreshing(false);
                     }
                 });
     }
 
+    @Override
+    public void onRefresh() {
+        getGames();
+    }
 }

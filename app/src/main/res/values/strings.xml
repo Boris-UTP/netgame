@@ -1,16 +1,17 @@
 <resources>
     <string name="app_name">NetGame</string>
     <string name="title_activity_maps">Map</string>
-    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_sign_up">Regístrate</string>
     <string name="action_settings">Settings</string>
 
     <string name="loading">Cargando ...</string>
 
-    <string-array name="typeUserSpinner">
-        <item>Gamer</item>
-        <item>Cabin</item>
+    <string-array name="userTypeSpinner">
+        <item>Usuario gamer</item>
+        <item>Cabina de internet</item>
     </string-array>
-    <string name="title_activity_main">MainActivity</string>
+
+    <string name="title_activity_main">Juegos</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

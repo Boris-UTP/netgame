@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingTop="@dimen/default_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.netgame.netgame.activities.SignUpActivity"
-    tools:showIn="@layout/activity_sign_up"
-    android:paddingTop="@dimen/default_margin">
+    tools:showIn="@layout/activity_sign_up">
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/usernameTextInputLayout"
@@ -22,7 +22,7 @@
             android:layout_width="@dimen/sign_in_width_edit_text"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/ic_person_outline_black_24dp"
-            android:hint="Username" />
+            android:hint="Usuario" />
 
     </android.support.design.widget.TextInputLayout>
 
@@ -39,7 +39,7 @@
             android:layout_width="@dimen/sign_in_width_edit_text"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
-            android:hint="Password"
+            android:hint="Contraseña"
             android:inputType="textPassword" />
 
     </android.support.design.widget.TextInputLayout>
@@ -58,18 +58,31 @@
             android:layout_width="@dimen/sign_in_width_edit_text"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
-            android:hint="Confirm password"
+            android:hint="Confirmar contraseña"
             android:inputType="textPassword" />
 
     </android.support.design.widget.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/userTypeSpinner"
+        android:layout_width="@dimen/sign_in_width_edit_text"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:entries="@array/userTypeSpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/confirmPasswordTextInputLayout">
+
+    </Spinner>
 
     <Button
         android:id="@+id/signUpButton"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Sign up"
+        android:layout_marginTop="@dimen/default_margin"
+        android:text="Registrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/confirmPasswordTextInputLayout" />
+        app:layout_constraintTop_toBottomOf="@id/userTypeSpinner" />
 
 </android.support.constraint.ConstraintLayout>

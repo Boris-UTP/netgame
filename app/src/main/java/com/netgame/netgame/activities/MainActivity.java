@@ -16,25 +16,25 @@ import com.netgame.netgame.fragments.HomeFragment;
 import com.netgame.netgame.fragments.MapFragment;
 import com.netgame.netgame.fragments.SettingsFragment;
 
-public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener  {
+public class MainActivity extends BaseActivity implements BottomNavigationView.OnNavigationItemSelectedListener  {
 
     private BottomNavigationView navigationBottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        addToolbar();
 
-        navigationBottomNavigationView = (BottomNavigationView) findViewById(R.id.navigation);
+        addHomeToolbar();
+
+        navigationBottomNavigationView = findViewById(R.id.navigation);
         navigationBottomNavigationView.setOnNavigationItemSelectedListener(this);
 
         navigateAccordingTo(R.id.navigation_home);
     }
 
-    private void addToolbar() {
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+    @Override
+    protected int getLayoutId() {
+        return R.layout.activity_main;
     }
 
     private Fragment getFragmentFor(int id) {

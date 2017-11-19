@@ -28,7 +28,7 @@ import java.util.List;
 
 import static com.netgame.netgame.network.NetGameApiService.AUTHENTICATE_URL;
 
-public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
+public class LoginActivity extends BaseActivity implements View.OnClickListener {
 
     private Button signInButton;
     private LinearLayout optionSignUpLinearLayout;
@@ -39,19 +39,12 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     private Gson gson;
 
-    private ProgressDialog progressDialog;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
 
         tag = getResources().getString(R.string.app_name);
         gson = new Gson();
-
-        progressDialog = new ProgressDialog(this);
-        progressDialog.setMessage(getResources().getString(R.string.loading));
-        progressDialog.setCanceledOnTouchOutside(false);
 
         optionSignUpLinearLayout = findViewById(R.id.optionSignUpLinearLayout);
         optionSignUpLinearLayout.setOnClickListener(this);
@@ -64,11 +57,15 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     @Override
-    public void onClick(View view) {
+    protected int getLayoutId() {
+        return R.layout.activity_login;
+    }
 
+
+    @Override
+    public void onClick(View view) {
         switch (view.getId()){
             case R.id.signInButton:
-                // intent = new Intent(getApplicationContext(), MainActivity.class);
                 authenticate();
                 break;
             case R.id.optionSignUpLinearLayout:
@@ -79,7 +76,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     private void authenticate (){
-        progressDialog.show();
+        showProgressDialog();
         AndroidNetworking
                 .post(AUTHENTICATE_URL)
                 .addBodyParameter("userName",userEditText.getText().toString())
@@ -91,7 +88,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     @Override
                     public void onResponse(JSONObject response) {
                         Base<Authenticate> authenticate = gson.fromJson(response.toString(), new TypeToken<Base<Authenticate>>(){}.getType());
-                        progressDialog.dismiss();
+                        dismissProgressDialog();
                         if (authenticate.getStatusBody().getCode().equalsIgnoreCase("0")){
 
                             PreferencesEditor.savePreference(getApplicationContext(),"token", authenticate.getData().getToken());
@@ -105,7 +102,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
                     @Override
                     public void onError(ANError anError) {
-                        progressDialog.dismiss();
+                        dismissProgressDialog();
                         Toast.makeText(getApplicationContext(),anError.getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 });

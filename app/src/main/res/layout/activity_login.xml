@@ -13,11 +13,11 @@
         android:weightSum="3">
 
         <LinearLayout
-            android:elevation="4dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:background="#F5F5F5"
+            android:elevation="4dp"
             android:gravity="center"
             android:orientation="vertical">
 
@@ -39,9 +39,9 @@
                     android:id="@+id/contentOptionsLinearLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
                     android:orientation="horizontal"
                     android:weightSum="2"
-                    android:background="@color/colorPrimary"
                     app:layout_constraintBottom_toBottomOf="parent">
 
                     <LinearLayout
@@ -55,7 +55,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="45dp"
                             android:gravity="center"
-                            android:text="Sign in"
+                            android:text="Ingresar"
                             android:textColor="@android:color/white" />
 
                         <View
@@ -79,7 +79,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="45dp"
                             android:gravity="center"
-                            android:text="Sign up"
+                            android:text="Registrar"
                             android:textColor="@android:color/white" />
 
                         <View
@@ -101,8 +101,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/colorPrimary"
-            android:orientation="vertical"
             android:gravity="center"
+            android:orientation="vertical"
             android:paddingLeft="10dp"
             android:paddingRight="10dp">
 
@@ -116,8 +116,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@android:color/white"
-                    android:hint="User"
-                    android:text="Juanza"
+                    android:hint="Usuario"
+                    android:text="arka"
                     android:textColorHint="@android:color/white" />
 
             </android.support.design.widget.TextInputLayout>
@@ -132,21 +132,20 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@android:color/white"
-                    android:hint="Password"
+                    android:hint="Contraseña"
                     android:inputType="textPassword"
-                    android:text="ju@n999"
+                    android:text="123"
                     android:textColorHint="@android:color/white" />
 
             </android.support.design.widget.TextInputLayout>
-
 
             <Button
                 android:id="@+id/signInButton"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:textColor="@android:color/white"
                 android:background="@color/colorPrimaryDark"
-                android:text="Sign in" />
+                android:text="Ingresar"
+                android:textColor="@android:color/white" />
 
         </LinearLayout>
 

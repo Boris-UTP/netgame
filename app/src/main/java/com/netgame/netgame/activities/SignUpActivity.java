@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.androidnetworking.AndroidNetworking;
@@ -26,12 +27,13 @@ import org.json.JSONObject;
 
 import static com.netgame.netgame.network.NetGameApiService.CREATE_USER_URL;
 
-public class SignUpActivity extends AppCompatActivity implements View.OnClickListener {
+public class SignUpActivity extends BaseActivity implements View.OnClickListener {
 
     private EditText userNameEditText;
     private EditText passwordEditText;
     private EditText confirmPasswordEditText;
     private Button signUpButton;
+    private Spinner userTypeSpinner;
 
     private String tag;
 
@@ -40,8 +42,8 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_up);
-        addToolbar();
+
+        addBackToolbar();
 
         tag = getResources().getString(R.string.app_name);
         gson = new Gson();
@@ -51,16 +53,13 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         confirmPasswordEditText = findViewById(R.id.confirmPasswordEditText);
         signUpButton = findViewById(R.id.signUpButton);
         signUpButton.setOnClickListener(this);
+        userTypeSpinner = findViewById(R.id.userTypeSpinner);
 
     }
 
-    private void addToolbar() {
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        ActionBar actionBar = getSupportActionBar();
-        if (actionBar != null) {
-            actionBar.setDisplayHomeAsUpEnabled(true);
-        }
+    @Override
+    protected int getLayoutId() {
+        return R.layout.activity_sign_up;
     }
 
     @Override
@@ -92,17 +91,19 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     }
 
     private void createUser() {
+        showProgressDialog();
         AndroidNetworking
                 .post(CREATE_USER_URL)
                 .addHeaders("token", getResources().getString(R.string.token))
                 .addBodyParameter("userName", userNameEditText.getText().toString())
                 .addBodyParameter("password", passwordEditText.getText().toString())
-                .addBodyParameter("userType", "1")
+                .addBodyParameter("userType", String.valueOf(userTypeSpinner.getSelectedItemPosition() + 1))
                 .setTag(tag)
                 .build()
                 .getAsJSONObject(new JSONObjectRequestListener() {
                     @Override
                     public void onResponse(JSONObject response) {
+                        dismissProgressDialog();
                         Base responseObject = gson.fromJson(response.toString(), Base.class);
                         if (responseObject.getStatusBody().getCode().equals("0")){
                             Toast.makeText(getApplicationContext(), "Registrado correctamente", Toast.LENGTH_SHORT).show();
@@ -115,6 +116,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
                     @Override
                     public void onError(ANError anError) {
+                        dismissProgressDialog();
                         Log.d(tag, anError.getMessage());
                     }
                 });
