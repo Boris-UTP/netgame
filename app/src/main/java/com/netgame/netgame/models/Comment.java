@@ -8,18 +8,19 @@ import com.google.gson.annotations.SerializedName;
 
 public class Comment {
 
-    @SerializedName("username")
+    @SerializedName("userName")
     private String userName;
 
     @SerializedName("description")
     private String description;
 
-    @SerializedName("myLike")
-    private Boolean like;
+    @SerializedName("like")
+    private int like;
 
     @SerializedName("dateRegister")
     private String dateRegister;
 
+    @SerializedName("flag")
     private int flagUser;
 
     public Comment(){
@@ -44,11 +45,11 @@ public class Comment {
         return this;
     }
 
-    public Boolean getLike() {
+    public int getLike() {
         return like;
     }
 
-    public Comment setLike(Boolean like) {
+    public Comment setLike(int like) {
         this.like = like;
         return this;
     }

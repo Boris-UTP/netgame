@@ -1,9 +1,11 @@
 package com.netgame.netgame.fragments;
 
 
+import android.graphics.Rect;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -77,6 +79,7 @@ public class EventsFragment extends Fragment implements SwipeRefreshLayout.OnRef
 
         eventsRecyclerView.setAdapter(eventsAdapter);
         eventsRecyclerView.setLayoutManager(eventsLayoutManager);
+        eventsRecyclerView.addItemDecoration(getItemDecoration());
 
         refreshSwipeRefreshLayout.setColorSchemeResources(R.color.colorPrimary);
         refreshSwipeRefreshLayout.setOnRefreshListener(this);
@@ -89,6 +92,25 @@ public class EventsFragment extends Fragment implements SwipeRefreshLayout.OnRef
         });
 
         return context;
+    }
+
+    private DividerItemDecoration getItemDecoration() {
+        DividerItemDecoration itemDecoration = new
+                DividerItemDecoration(getActivity(), DividerItemDecoration.VERTICAL) {
+                    @Override
+                    public void getItemOffsets(Rect outRect, View view, RecyclerView parent, RecyclerView.State state) {
+                        int position = parent.getChildAdapterPosition(view);
+                        // hide the divider for the last child
+                        if (position == parent.getAdapter().getItemCount() - 1) {
+                            outRect.setEmpty();
+                        } else {
+                            super.getItemOffsets(outRect, view, parent, state);
+                        }
+                    }
+                };
+
+        itemDecoration.setDrawable(getResources().getDrawable(R.drawable.line_division));
+        return itemDecoration;
     }
 
     @Override
@@ -122,6 +144,7 @@ public class EventsFragment extends Fragment implements SwipeRefreshLayout.OnRef
                     @Override
                     public void onError(ANError anError) {
                         Log.d(tag, anError.getMessage());
+                        refreshSwipeRefreshLayout.setRefreshing(false);
                     }
                 });
     }

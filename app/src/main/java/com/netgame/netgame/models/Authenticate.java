@@ -17,6 +17,9 @@ public class Authenticate {
     @SerializedName("status")
     private String status;
 
+    @SerializedName("typeUser")
+    private int typeUser;
+
     public String getToken() {
         return token;
     }
@@ -41,6 +44,15 @@ public class Authenticate {
 
     public Authenticate setStatus(String status) {
         this.status = status;
+        return this;
+    }
+
+    public int getTypeUser() {
+        return typeUser;
+    }
+
+    public Authenticate setTypeUser(int typeUser) {
+        this.typeUser = typeUser;
         return this;
     }
 }

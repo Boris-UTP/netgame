@@ -77,8 +77,8 @@ public class CreatePublicationActivity extends BaseActivity implements View.OnCl
         AndroidNetworking
                 .post(CREATE_PUBLICATION_URL)
                 .addHeaders("token", PreferencesEditor.getStringPreference(this, "token", ""))
-                .addBodyParameter("Title", titleEditText.getText().toString())
-                .addBodyParameter("Description", descriptionEditText.getText().toString())
+                .addBodyParameter("title", titleEditText.getText().toString())
+                .addBodyParameter("description", descriptionEditText.getText().toString())
                 .addBodyParameter("idGame", String.valueOf(game.getId()))
                 .setTag(tag)
                 .setPriority(Priority.LOW)

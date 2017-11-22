@@ -94,7 +94,7 @@ public class SignUpActivity extends BaseActivity implements View.OnClickListener
         showProgressDialog();
         AndroidNetworking
                 .post(CREATE_USER_URL)
-                .addHeaders("token", getResources().getString(R.string.token))
+                // .addHeaders("token", getResources().getString(R.string.token))
                 .addBodyParameter("userName", userNameEditText.getText().toString())
                 .addBodyParameter("password", passwordEditText.getText().toString())
                 .addBodyParameter("userType", String.valueOf(userTypeSpinner.getSelectedItemPosition() + 1))
@@ -106,7 +106,7 @@ public class SignUpActivity extends BaseActivity implements View.OnClickListener
                         dismissProgressDialog();
                         Base responseObject = gson.fromJson(response.toString(), Base.class);
                         if (responseObject.getStatusBody().getCode().equals("0")){
-                            // Toast.makeText(getApplicationContext(), "Registrado correctamente", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), responseObject.getStatusBody().getMessage(), Toast.LENGTH_SHORT).show();
                             setResult(RESULT_OK, new Intent(getApplicationContext(), LoginActivity.class));
                             finish();
                         }else{

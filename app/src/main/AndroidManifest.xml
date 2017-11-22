@@ -75,6 +75,10 @@
         <activity
             android:name=".activities.CreateCommentActivity"
             android:label="@string/title_activity_create_comment"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.EventActivity"
+            android:label="@string/title_activity_event"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

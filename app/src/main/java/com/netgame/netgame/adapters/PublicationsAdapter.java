@@ -61,12 +61,14 @@ public class PublicationsAdapter extends RecyclerView.Adapter<PublicationsAdapte
             @Override
             public void onClick(View view) {
                 int favorite = publications.get(position).getFavorite();
-                if (favorite == 0){
+                if (favorite == 0) {
                     publications.get(position).setFavorite(1);
                     holder.setIconStartImageView(1);
+                    postFavorite(view, publication.getId(), "1");
                 } else {
                     publications.get(position).setFavorite(0);
                     holder.setIconStartImageView(0);
+                    postFavorite(view, publication.getId(), "0");
                 }
             }
         });
@@ -75,13 +77,16 @@ public class PublicationsAdapter extends RecyclerView.Adapter<PublicationsAdapte
             @Override
             public void onClick(View view) {
                 int like = publications.get(position).getLike();
-                if (like == 0){
+                if (like == 0) {
                     publications.get(position).setLike(1);
                     holder.setIconThumbUpImageView(1);
+                    postLike(view, publication.getId(), "1");
                 } else {
                     publications.get(position).setLike(0);
                     holder.setIconThumbUpImageView(0);
+                    postLike(view, publication.getId(), "0");
                 }
+
             }
         });
 
@@ -131,15 +136,15 @@ public class PublicationsAdapter extends RecyclerView.Adapter<PublicationsAdapte
 
         public void setIconStartImageView(int state) {
             if (state == 0) {
-                iconStartImageView.setColorFilter(Color.rgb(0,0,0));
+                iconStartImageView.setColorFilter(Color.rgb(0, 0, 0));
             } else {
-                iconStartImageView.setColorFilter(Color.rgb(0,150,136));
+                iconStartImageView.setColorFilter(Color.rgb(0, 150, 136));
             }
         }
 
-        public void setIconThumbUpImageView(int state){
+        public void setIconThumbUpImageView(int state) {
             if (state == 0) {
-                iconThumbUpImageView.setColorFilter(Color.rgb(0,0,0));
+                iconThumbUpImageView.setColorFilter(Color.rgb(0, 0, 0));
             } else {
                 iconThumbUpImageView.setColorFilter(Color.rgb(0, 150, 136));
             }
@@ -147,11 +152,12 @@ public class PublicationsAdapter extends RecyclerView.Adapter<PublicationsAdapte
     }
 
 
-    private void postLike(final View view){
+    private void postLike(final View view, String idPublication, String like) {
 
         AndroidNetworking
                 .post(LIKE_PUBLICATION)
-                .addBodyParameter("", "")
+                .addBodyParameter("idPublication", idPublication)
+                .addBodyParameter("like", like)
                 .addHeaders("token", PreferencesEditor.getStringPreference(view.getContext(), "token", ""))
                 .setTag(view.getResources().getString(R.string.app_name))
                 .setPriority(Priority.LOW)
@@ -161,22 +167,23 @@ public class PublicationsAdapter extends RecyclerView.Adapter<PublicationsAdapte
                     public void onResponse(JSONObject response) {
                         Gson gson = new Gson();
                         Base responseObject = gson.fromJson(response.toString(), Base.class);
-                        if (!responseObject.getStatusBody().getCode().equals("0")){
+                        if (!responseObject.getStatusBody().getCode().equals("0")) {
                             Log.d(view.getResources().getString(R.string.app_name), responseObject.getStatusBody().getMessage());
                         }
                     }
 
                     @Override
                     public void onError(ANError anError) {
-
+                        Log.d(view.getResources().getString(R.string.app_name), anError.getMessage());
                     }
                 });
     }
 
-    private void postFavorite(final View view){
+    private void postFavorite(final View view, String idPublication, String favorite) {
         AndroidNetworking
                 .post(FAVORITE_PUBLICATION)
-                .addBodyParameter("", "")
+                .addBodyParameter("idPublication", idPublication)
+                .addBodyParameter("favorite", favorite)
                 .addHeaders("token", PreferencesEditor.getStringPreference(view.getContext(), "token", ""))
                 .setTag(view.getResources().getString(R.string.app_name))
                 .setPriority(Priority.LOW)
@@ -186,7 +193,7 @@ public class PublicationsAdapter extends RecyclerView.Adapter<PublicationsAdapte
                     public void onResponse(JSONObject response) {
                         Gson gson = new Gson();
                         Base responseObject = gson.fromJson(response.toString(), Base.class);
-                        if (!responseObject.getStatusBody().getCode().equals("0")){
+                        if (!responseObject.getStatusBody().getCode().equals("0")) {
                             Log.d(view.getResources().getString(R.string.app_name), responseObject.getStatusBody().getMessage());
                         }
                     }

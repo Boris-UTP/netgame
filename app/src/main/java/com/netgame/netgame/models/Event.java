@@ -26,8 +26,14 @@ public class Event {
     @SerializedName("dateEnd")
     private String dateEnd;
 
-    @SerializedName("address")
-    private String address;
+    @SerializedName("latitude")
+    private double latitude;
+
+    @SerializedName("longitude")
+    private double longitude;
+
+    @SerializedName("name")
+    private String name;
 
     public String getTitle() {
         return title;
@@ -73,21 +79,39 @@ public class Event {
         return this;
     }
 
-    public String getAddress() {
-        return address;
-    }
-
-    public Event setAddress(String address) {
-        this.address = address;
-        return this;
-    }
-
     public int getIdEvent() {
         return idEvent;
     }
 
     public Event setIdEvent(int idEvent) {
         this.idEvent = idEvent;
+        return this;
+    }
+
+    public double getLatitude() {
+        return latitude;
+    }
+
+    public Event setLatitude(double latitude) {
+        this.latitude = latitude;
+        return this;
+    }
+
+    public double getLongitude() {
+        return longitude;
+    }
+
+    public Event setLongitude(double longitude) {
+        this.longitude = longitude;
+        return this;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Event setName(String name) {
+        this.name = name;
         return this;
     }
 }

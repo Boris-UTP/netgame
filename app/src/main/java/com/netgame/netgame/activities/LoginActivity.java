@@ -92,6 +92,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
                         if (authenticate.getStatusBody().getCode().equalsIgnoreCase("0")){
 
                             PreferencesEditor.savePreference(getApplicationContext(),"token", authenticate.getData().getToken());
+                            PreferencesEditor.savePreference(getApplicationContext(),"typeUser", authenticate.getData().getTypeUser());
 
                             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                             startActivity(intent);

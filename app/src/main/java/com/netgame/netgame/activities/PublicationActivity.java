@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import com.netgame.netgame.R;
 import com.netgame.netgame.adapters.ViewPagerAdapter;
+import com.netgame.netgame.commons.PreferencesEditor;
 import com.netgame.netgame.fragments.EventsFragment;
 import com.netgame.netgame.fragments.PublicationsFragment;
 import com.netgame.netgame.models.Game;
@@ -68,9 +69,15 @@ public class PublicationActivity extends AppCompatActivity implements View.OnCli
                 switch (tab.getPosition()) {
                     case 0:
                         actionFloatingActionButton.setImageDrawable(getResources().getDrawable(R.drawable.ic_rate_review_black_24dp));
+                        actionFloatingActionButton.setVisibility(View.VISIBLE);
                         break;
                     case 1:
                         actionFloatingActionButton.setImageDrawable(getResources().getDrawable(R.drawable.ic_event_note_black_24dp));
+                        if (PreferencesEditor.getIntPreference(getApplicationContext(), "typeUser", 1) == 1) {
+                            actionFloatingActionButton.setVisibility(View.GONE);
+                        } else {
+                            actionFloatingActionButton.setVisibility(View.VISIBLE);
+                        }
                         break;
                 }
             }
@@ -139,7 +146,7 @@ public class PublicationActivity extends AppCompatActivity implements View.OnCli
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        switch (requestCode){
+        switch (requestCode) {
             case 0:
                 if (resultCode == RESULT_OK) {
                     publicationFragment.getPublications();

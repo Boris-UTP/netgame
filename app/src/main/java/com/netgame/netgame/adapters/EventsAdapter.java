@@ -1,5 +1,6 @@
 package com.netgame.netgame.adapters;
 
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.netgame.netgame.R;
+import com.netgame.netgame.activities.EventActivity;
 import com.netgame.netgame.models.Event;
 
 import java.util.List;
@@ -47,7 +49,7 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.ViewHolder
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                view.getContext().startActivity(new Intent(view.getContext(), EventActivity.class));
             }
         });
     }

@@ -10,8 +10,8 @@ import com.google.gson.annotations.SerializedName;
 
 public class Publication {
 
-    @SerializedName("idPublication")
-    private int id;
+    @SerializedName("_id")
+    private String id;
 
     @SerializedName("title")
     private String title;
@@ -22,7 +22,7 @@ public class Publication {
     @SerializedName("dateRegister")
     private String dateRegister;
 
-    @SerializedName("mylike")
+    @SerializedName("like")
     private int like;
 
     @SerializedName("favorite")
@@ -33,11 +33,11 @@ public class Publication {
         this.favorite = 0;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public Publication setId(int id) {
+    public Publication setId(String id) {
         this.id = id;
         return this;
     }
@@ -89,7 +89,7 @@ public class Publication {
 
     public Bundle toBundle() {
         Bundle bundle = new Bundle();
-        bundle.putInt("idPublication", id);
+        bundle.putString("idPublication", id);
         bundle.putString("title", title);
         bundle.putString("description", description);
         bundle.putString("dateRegister", dateRegister);
@@ -101,7 +101,7 @@ public class Publication {
     public static Publication from(Bundle bundle){
         Publication publication = new Publication();
         publication.setTitle(bundle.getString("title"))
-                .setId(bundle.getInt("idPublication"))
+                .setId(bundle.getString("idPublication"))
                 .setDescription(bundle.getString("description"))
                 .setDateRegister(bundle.getString("dateRegister"))
                 .setLike(bundle.getInt("like"))

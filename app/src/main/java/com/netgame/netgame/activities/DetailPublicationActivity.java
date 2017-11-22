@@ -40,6 +40,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static com.netgame.netgame.network.NetGameApiService.COMMENTS_URL;
+import static com.netgame.netgame.network.NetGameApiService.FAVORITE_PUBLICATION;
+import static com.netgame.netgame.network.NetGameApiService.LIKE_PUBLICATION;
 
 public class DetailPublicationActivity extends BaseActivity implements SwipeRefreshLayout.OnRefreshListener, View.OnClickListener {
 
@@ -184,16 +186,20 @@ public class DetailPublicationActivity extends BaseActivity implements SwipeRefr
             case R.id.iconStartImageView:
                 if (publication.getFavorite() == 0) {
                     publication.setFavorite(1);
+                    postFavorite(publication.getId(), "1");
                 } else {
                     publication.setFavorite(0);
+                    postFavorite(publication.getId(), "0");
                 }
                 setColorFavorite();
                 break;
             case R.id.iconThumbUpImageView:
                 if (publication.getLike() == 0) {
                     publication.setLike(1);
+                    postLike(publication.getId(), "1");
                 } else {
                     publication.setLike(0);
+                    postLike(publication.getId(), "0");
                 }
                 setColorLike();
                 break;
@@ -212,5 +218,57 @@ public class DetailPublicationActivity extends BaseActivity implements SwipeRefr
                 getComments();
             }
         }
+    }
+
+    private void postLike(String idPublication, String like) {
+        AndroidNetworking
+                .post(LIKE_PUBLICATION)
+                .addBodyParameter("idPublication", idPublication)
+                .addBodyParameter("like", like)
+                .addHeaders("token", PreferencesEditor.getStringPreference(getApplicationContext(), "token", ""))
+                .setTag(getResources().getString(R.string.app_name))
+                .setPriority(Priority.LOW)
+                .build()
+                .getAsJSONObject(new JSONObjectRequestListener() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        Gson gson = new Gson();
+                        Base responseObject = gson.fromJson(response.toString(), Base.class);
+                        if (!responseObject.getStatusBody().getCode().equals("0")) {
+                            Log.d(tag, responseObject.getStatusBody().getMessage());
+                        }
+                    }
+
+                    @Override
+                    public void onError(ANError anError) {
+                        Log.d(tag, anError.getMessage());
+                    }
+                });
+    }
+
+    private void postFavorite(String idPublication, String favorite) {
+        AndroidNetworking
+                .post(FAVORITE_PUBLICATION)
+                .addBodyParameter("idPublication", idPublication)
+                .addBodyParameter("favorite", favorite)
+                .addHeaders("token", PreferencesEditor.getStringPreference(getApplicationContext(), "token", ""))
+                .setTag(getResources().getString(R.string.app_name))
+                .setPriority(Priority.LOW)
+                .build()
+                .getAsJSONObject(new JSONObjectRequestListener() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        Gson gson = new Gson();
+                        Base responseObject = gson.fromJson(response.toString(), Base.class);
+                        if (!responseObject.getStatusBody().getCode().equals("0")) {
+                            Log.d(tag, responseObject.getStatusBody().getMessage());
+                        }
+                    }
+
+                    @Override
+                    public void onError(ANError anError) {
+                        Log.d(tag, anError.getMessage());
+                    }
+                });
     }
 }

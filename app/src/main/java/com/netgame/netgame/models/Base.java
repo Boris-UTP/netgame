@@ -34,7 +34,7 @@ public class Base<T> {
     public class StatusBody {
 
 
-        @SerializedName("cod")
+        @SerializedName("code")
         private String code;
 
         @SerializedName("message")

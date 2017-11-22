@@ -12,20 +12,20 @@ import org.json.JSONObject;
 
 public class Game {
 
-    @SerializedName("idGame")
-    private int id;
+    @SerializedName("_id")
+    private String id;
 
     @SerializedName("name")
     private String name;
 
-    @SerializedName("imagen")
+    @SerializedName("image")
     private String image;
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public Game setId(int id) {
+    public Game setId(String id) {
         this.id = id;
         return this;
     }
@@ -50,7 +50,7 @@ public class Game {
 
     public static Game from (Bundle bundle){
         Game game = new Game();
-        game.setId(bundle.getInt("idGame"))
+        game.setId(bundle.getString("idGame"))
                 .setName(bundle.getString("name"))
                 .setImage(bundle.getString("image"));
         return game;
@@ -58,7 +58,7 @@ public class Game {
 
     public Bundle toBundle (){
         Bundle bundle = new Bundle();
-        bundle.putInt("idGame", id);
+        bundle.putString("idGame", id);
         bundle.putString("name", name);
         bundle.putString("image", image);
         return bundle;

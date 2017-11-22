@@ -22,4 +22,5 @@
     <string name="title_activity_editar_uauario">Editar Cabina</string>
     <string name="title_activity_edit_gamer_user">Editar Gamer</string>
     <string name="title_activity_create_comment">Comentar</string>
+    <string name="title_activity_event">EventActivity</string>
 </resources>
