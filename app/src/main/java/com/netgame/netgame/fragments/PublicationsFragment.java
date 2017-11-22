@@ -1,9 +1,13 @@
 package com.netgame.netgame.fragments;
 
 
+import android.content.Intent;
+import android.graphics.Rect;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -29,6 +33,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import static android.app.Activity.RESULT_OK;
 import static com.netgame.netgame.network.NetGameApiService.PUBLICATIONS_URL;
 
 /**
@@ -48,7 +53,7 @@ public class PublicationsFragment extends Fragment implements SwipeRefreshLayout
     private String tag;
     private Gson gson;
 
-    public static PublicationsFragment newInstance(Game game){
+    public static PublicationsFragment newInstance(Game game) {
         Bundle args = game.toBundle();
         PublicationsFragment fragment = new PublicationsFragment();
         fragment.setArguments(args);
@@ -71,6 +76,7 @@ public class PublicationsFragment extends Fragment implements SwipeRefreshLayout
         layoutManager = new LinearLayoutManager(getActivity());
         publicationsRecyclerView.setAdapter(publicationsAdapter);
         publicationsRecyclerView.setLayoutManager(layoutManager);
+        publicationsRecyclerView.addItemDecoration(getItemDecoration());
 
         refreshSwipeRefreshLayout = context.findViewById(R.id.refreshSwipeRefreshLayout);
         refreshSwipeRefreshLayout.setOnRefreshListener(this);
@@ -86,7 +92,26 @@ public class PublicationsFragment extends Fragment implements SwipeRefreshLayout
         return context;
     }
 
-    public void getPublications(){
+    private DividerItemDecoration getItemDecoration() {
+        DividerItemDecoration itemDecoration = new
+                DividerItemDecoration(getActivity(), DividerItemDecoration.VERTICAL) {
+                    @Override
+                    public void getItemOffsets(Rect outRect, View view, RecyclerView parent, RecyclerView.State state) {
+                        int position = parent.getChildAdapterPosition(view);
+                        // hide the divider for the last child
+                        if (position == parent.getAdapter().getItemCount() - 1) {
+                            outRect.setEmpty();
+                        } else {
+                            super.getItemOffsets(outRect, view, parent, state);
+                        }
+                    }
+                };
+
+        itemDecoration.setDrawable(getResources().getDrawable(R.drawable.line_division));
+        return itemDecoration;
+    }
+
+    public void getPublications() {
         refreshSwipeRefreshLayout.setRefreshing(true);
         AndroidNetworking
                 .get(String.format(PUBLICATIONS_URL, String.valueOf(game.getId())))
@@ -100,10 +125,10 @@ public class PublicationsFragment extends Fragment implements SwipeRefreshLayout
                         Base<List<Publication>> publications = gson.fromJson(response.toString(), new TypeToken<Base<List<Publication>>>() {
                         }.getType());
 
-                        if (publications.getStatusBody().getCode().equalsIgnoreCase("0")){
+                        if (publications.getStatusBody().getCode().equalsIgnoreCase("0")) {
                             publicationsAdapter.setPublications(publications.getData());
                             publicationsAdapter.notifyDataSetChanged();
-                        }else {
+                        } else {
                             Toast.makeText(getActivity(), publications.getStatusBody().getMessage(), Toast.LENGTH_SHORT).show();
                         }
                         refreshSwipeRefreshLayout.setRefreshing(false);
@@ -121,4 +146,5 @@ public class PublicationsFragment extends Fragment implements SwipeRefreshLayout
     public void onRefresh() {
         getPublications();
     }
+
 }

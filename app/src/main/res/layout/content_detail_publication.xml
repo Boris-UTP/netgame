@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.netgame.netgame.activities.DetailPublicationActivity"
     tools:showIn="@layout/activity_detail_publication">
@@ -18,50 +19,52 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/default_margin"
             android:layout_marginRight="@dimen/default_margin"
-            android:paddingTop="24dp"
-            android:paddingBottom="24dp">
+            android:paddingBottom="24dp"
+            android:paddingTop="24dp">
 
             <TextView
                 android:id="@+id/titleTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
                 android:text="Title"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:layout_marginTop="@dimen/default_margin"
                 android:id="@+id/iconAlignImageView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:src="@drawable/ic_format_align_left_black_24dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/titleTextView" />
 
             <TextView
-                android:layout_marginLeft="@dimen/default_margin"
                 android:id="@+id/descriptionTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="@dimen/default_margin"
                 android:text="lasdfsfsfsf asdfasdf asdfasfasf asdfas sdfasf asdfas dfasfadsfas asdfas sadfsdfsf"
                 app:layout_constraintLeft_toRightOf="@id/iconAlignImageView"
                 app:layout_constraintTop_toBottomOf="@id/titleTextView" />
 
             <ImageView
-                android:layout_marginTop="@dimen/default_margin"
                 android:id="@+id/iconCalendarImageView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
                 android:src="@drawable/ic_today_black_24dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/descriptionTextView" />
 
             <TextView
-                android:layout_marginLeft="@dimen/default_margin"
-                android:layout_marginTop="@dimen/default_margin"
                 android:id="@+id/dateTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginTop="@dimen/default_margin"
                 android:text="15/10/2017"
                 app:layout_constraintLeft_toRightOf="@id/iconCalendarImageView"
                 app:layout_constraintTop_toBottomOf="@id/descriptionTextView" />
@@ -71,15 +74,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_thumb_up_black_24dp"
-                app:layout_constraintRight_toLeftOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"/>
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="parent" />
 
             <ImageView
-                android:layout_marginRight="@dimen/default_margin"
                 android:id="@+id/iconStartImageView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_star_border_black_24dp"
+                android:layout_marginRight="@dimen/default_margin"
+                android:src="@drawable/ic_star_black_24dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintRight_toLeftOf="@id/iconThumbUpImageView" />
 
@@ -88,10 +91,10 @@
     </android.support.v7.widget.CardView>
 
     <android.support.v4.widget.SwipeRefreshLayout
-        app:layout_constraintTop_toBottomOf="@+id/publicationCardView"
         android:id="@+id/commentsSwipeRefreshLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/publicationCardView">
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/commentsRecyclerView"
@@ -100,4 +103,4 @@
 
     </android.support.v4.widget.SwipeRefreshLayout>
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

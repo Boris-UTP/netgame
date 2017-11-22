@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.netgame.netgame.activities.CreateCommentActivity"
+    tools:showIn="@layout/activity_create_comment">
+
+    <EditText
+        android:layout_marginTop="@dimen/default_margin"
+        android:id="@+id/descriptionEditText"
+        android:layout_width="match_parent"
+        android:hint="Comentario"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine" />
+
+</android.support.constraint.ConstraintLayout>

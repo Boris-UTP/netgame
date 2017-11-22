@@ -1,6 +1,7 @@
 package com.netgame.netgame.activities;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -14,6 +15,7 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,10 +41,13 @@ import java.util.List;
 
 import static com.netgame.netgame.network.NetGameApiService.COMMENTS_URL;
 
-public class DetailPublicationActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
+public class DetailPublicationActivity extends BaseActivity implements SwipeRefreshLayout.OnRefreshListener, View.OnClickListener {
 
     private TextView titleTextView;
     private TextView descriptionTextView;
+    private TextView dateTextView;
+    private ImageView iconThumbUpImageView;
+    private ImageView iconStartImageView;
 
     private List<Comment> comments;
     private RecyclerView commentsRecyclerView;
@@ -60,21 +65,31 @@ public class DetailPublicationActivity extends AppCompatActivity implements Swip
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail_publication);
 
-        addToolbar();
+        addBackToolbar();
 
         publication = Publication.from(getIntent().getExtras());
         tag = getResources().getString(R.string.app_name);
         gson = new Gson();
 
         commentFloatingActionButton = findViewById(R.id.commentFloatingActionButton);
+        commentFloatingActionButton.setOnClickListener(this);
 
         titleTextView = findViewById(R.id.titleTextView);
         descriptionTextView = findViewById(R.id.descriptionTextView);
+        dateTextView = findViewById(R.id.dateTextView);
+        iconThumbUpImageView = findViewById(R.id.iconThumbUpImageView);
+        iconStartImageView = findViewById(R.id.iconStartImageView);
+
+        iconThumbUpImageView.setOnClickListener(this);
+        iconStartImageView.setOnClickListener(this);
 
         titleTextView.setText(publication.getTitle());
         descriptionTextView.setText(publication.getDescription());
+        dateTextView.setText(publication.getDateRegister());
+
+        setColorLike();
+        setColorFavorite();
 
         comments = new ArrayList<>();
 
@@ -96,13 +111,9 @@ public class DetailPublicationActivity extends AppCompatActivity implements Swip
         });
     }
 
-    private void addToolbar() {
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        ActionBar actionBar = getSupportActionBar();
-        if (actionBar != null) {
-            actionBar.setDisplayHomeAsUpEnabled(true);
-        }
+    @Override
+    protected int getLayoutId() {
+        return R.layout.activity_detail_publication;
     }
 
     @Override
@@ -116,7 +127,23 @@ public class DetailPublicationActivity extends AppCompatActivity implements Swip
         return super.onOptionsItemSelected(item);
     }
 
-    private void getComments(){
+    private void setColorLike() {
+        if (publication.getLike() == 0) {
+            iconThumbUpImageView.setColorFilter(Color.rgb(0, 0, 0));
+        } else {
+            iconThumbUpImageView.setColorFilter(Color.rgb(0, 150, 136));
+        }
+    }
+
+    private void setColorFavorite() {
+        if (publication.getFavorite() == 0) {
+            iconStartImageView.setColorFilter(Color.rgb(0, 0, 0));
+        } else {
+            iconStartImageView.setColorFilter(Color.rgb(0, 150, 136));
+        }
+    }
+
+    private void getComments() {
         commentsSwipeRefreshLayout.setRefreshing(true);
         AndroidNetworking
                 .get(String.format(COMMENTS_URL, String.valueOf(publication.getId())))
@@ -127,8 +154,9 @@ public class DetailPublicationActivity extends AppCompatActivity implements Swip
                 .getAsJSONObject(new JSONObjectRequestListener() {
                     @Override
                     public void onResponse(JSONObject response) {
-                        Base<PublicationComments> responseObject = gson.fromJson(response.toString(), new TypeToken<Base<PublicationComments>>(){}.getType());
-                        if (responseObject.getStatusBody().getCode().equals("0")){
+                        Base<PublicationComments> responseObject = gson.fromJson(response.toString(), new TypeToken<Base<PublicationComments>>() {
+                        }.getType());
+                        if (responseObject.getStatusBody().getCode().equals("0")) {
                             commentsAdapter.setComments(responseObject.getData().getComments());
                             commentsAdapter.notifyDataSetChanged();
                         } else {
@@ -143,12 +171,46 @@ public class DetailPublicationActivity extends AppCompatActivity implements Swip
                         commentsSwipeRefreshLayout.setRefreshing(false);
                     }
                 });
-
     }
-
 
     @Override
     public void onRefresh() {
         getComments();
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.iconStartImageView:
+                if (publication.getFavorite() == 0) {
+                    publication.setFavorite(1);
+                } else {
+                    publication.setFavorite(0);
+                }
+                setColorFavorite();
+                break;
+            case R.id.iconThumbUpImageView:
+                if (publication.getLike() == 0) {
+                    publication.setLike(1);
+                } else {
+                    publication.setLike(0);
+                }
+                setColorLike();
+                break;
+            case R.id.commentFloatingActionButton:
+                Intent intent = new Intent(getApplicationContext(), CreateCommentActivity.class);
+                intent.putExtras(publication.toBundle());
+                startActivityForResult(intent, 1);
+                break;
+        }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == 1){
+            if (requestCode == RESULT_OK){
+                getComments();
+            }
+        }
     }
 }

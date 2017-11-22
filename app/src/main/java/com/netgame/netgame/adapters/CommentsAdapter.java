@@ -4,6 +4,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.netgame.netgame.R;
@@ -40,6 +41,25 @@ public class CommentsAdapter extends RecyclerView.Adapter<CommentsAdapter.ViewHo
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         Comment comment = comments.get(position);
+
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(holder.itemView.getLayoutParams().width,
+                holder.itemView.getLayoutParams().height);
+
+        if (position == comments.size() -1 ){
+            params.setMargins(0,30,0,30);
+        } else{
+            params.setMargins(0,30,0,0);
+        }
+
+        if (comment.getFlagUser() == 0) {
+            params.setMarginStart(70);
+            params.setMarginEnd(30);
+        } else {
+            params.setMarginEnd(70);
+            params.setMarginStart(30);
+        }
+
+        holder.itemView.setLayoutParams(params);
 
         holder.userNameTextView.setText(comment.getUserName());
         holder.descriptionTextView.setText(comment.getDescription());

@@ -30,7 +30,8 @@ public class PublicationActivity extends AppCompatActivity implements View.OnCli
     private TabLayout tabLayout;
     private FloatingActionButton actionFloatingActionButton;
 
-    // OnFloatingActionButtonClickListener onFloatingActionButtonClickListener;
+    PublicationsFragment publicationFragment;
+    EventsFragment eventsFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +65,7 @@ public class PublicationActivity extends AppCompatActivity implements View.OnCli
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-                switch (tab.getPosition()){
+                switch (tab.getPosition()) {
                     case 0:
                         actionFloatingActionButton.setImageDrawable(getResources().getDrawable(R.drawable.ic_rate_review_black_24dp));
                         break;
@@ -85,14 +86,16 @@ public class PublicationActivity extends AppCompatActivity implements View.OnCli
             }
         });
 
-        tabLayout.getTabAt(0).setText("Publications");
-        tabLayout.getTabAt(1).setText("Events");
+        tabLayout.getTabAt(0).setText("Publicaciones");
+        tabLayout.getTabAt(1).setText("Eventos");
     }
 
     private List<Fragment> buildFragments() {
         List<Fragment> fragmentList = new ArrayList<>();
-        fragmentList.add(new PublicationsFragment().newInstance(game));
-        fragmentList.add(new EventsFragment().newInstance(game));
+        publicationFragment = new PublicationsFragment().newInstance(game);
+        eventsFragment = new EventsFragment().newInstance(game);
+        fragmentList.add(publicationFragment);
+        fragmentList.add(eventsFragment);
         return fragmentList;
     }
 
@@ -111,20 +114,12 @@ public class PublicationActivity extends AppCompatActivity implements View.OnCli
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
-                setResult(RESULT_OK, new Intent(getApplicationContext(), MainActivity.class));
+                setResult(RESULT_CANCELED, new Intent(getApplicationContext(), MainActivity.class));
                 finish();
                 return true;
         }
         return super.onOptionsItemSelected(item);
     }
-
-    /*public interface OnFloatingActionButtonClickListener{
-        void OnFloatingActionButtonClickListener(TabLayout tabLayout, View view);
-    }
-
-    public void SetOnFloatingActionButtonClickListener(OnFloatingActionButtonClickListener onFloatingActionButtonClickListener){
-        this.onFloatingActionButtonClickListener = onFloatingActionButtonClickListener;
-    }*/
 
     @Override
     public void onClick(View view) {
@@ -136,10 +131,26 @@ public class PublicationActivity extends AppCompatActivity implements View.OnCli
                 break;
             case 1:
                 Intent intentEvent = new Intent(getApplicationContext(), CreateEventActivity.class);
-                startActivityForResult(intentEvent, 0);
+                startActivityForResult(intentEvent, 1);
                 break;
         }
-        /* if (onFloatingActionButtonClickListener != null)
-            onFloatingActionButtonClickListener.OnFloatingActionButtonClickListener(tabLayout, view);*/
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        switch (requestCode){
+            case 0:
+                if (resultCode == RESULT_OK) {
+                    publicationFragment.getPublications();
+                }
+                break;
+            case 1:
+                if (resultCode == RESULT_OK) {
+                    // eventsFragment.gete
+                }
+                break;
+        }
+    }
+
 }

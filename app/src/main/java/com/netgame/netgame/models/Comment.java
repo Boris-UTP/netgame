@@ -20,6 +20,12 @@ public class Comment {
     @SerializedName("dateRegister")
     private String dateRegister;
 
+    private int flagUser;
+
+    public Comment(){
+        this.flagUser = 0;
+    }
+
     public String getUserName() {
         return userName;
     }
@@ -53,6 +59,15 @@ public class Comment {
 
     public Comment setDateRegister(String dateRegister) {
         this.dateRegister = dateRegister;
+        return this;
+    }
+
+    public int getFlagUser() {
+        return flagUser;
+    }
+
+    public Comment setFlagUser(int flagUser) {
+        this.flagUser = flagUser;
         return this;
     }
 }

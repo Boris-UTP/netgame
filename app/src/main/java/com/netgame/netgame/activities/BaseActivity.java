@@ -16,12 +16,14 @@ import com.netgame.netgame.R;
 public abstract class BaseActivity extends AppCompatActivity {
 
     private ProgressDialog progressDialog;
+    public String tag;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(getLayoutId());
+        tag = getResources().getString(R.string.app_name);
         createProgressDialog();
     }
 

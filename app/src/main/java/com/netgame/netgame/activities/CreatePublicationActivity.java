@@ -27,7 +27,7 @@ import org.json.JSONObject;
 
 import static com.netgame.netgame.network.NetGameApiService.CREATE_PUBLICATION_URL;
 
-public class CreatePublicationActivity extends AppCompatActivity implements View.OnClickListener {
+public class CreatePublicationActivity extends BaseActivity implements View.OnClickListener {
 
     private EditText titleEditText;
     private EditText descriptionEditText;
@@ -42,8 +42,8 @@ public class CreatePublicationActivity extends AppCompatActivity implements View
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_post);
-        addToolbar();
+
+        addBackToolbar();
 
         tag = getResources().getString(R.string.app_name);
         gson = new Gson();
@@ -56,21 +56,16 @@ public class CreatePublicationActivity extends AppCompatActivity implements View
         createFloatingActionButton.setOnClickListener(this);
     }
 
-    private void addToolbar() {
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
-        ActionBar actionBar = getSupportActionBar();
-        if (actionBar != null) {
-            actionBar.setDisplayHomeAsUpEnabled(true);
-        }
+    @Override
+    protected int getLayoutId() {
+        return R.layout.activity_post;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
-                setResult(RESULT_OK, new Intent(getApplicationContext(), MainActivity.class));
+                setResult(RESULT_CANCELED, new Intent(getApplicationContext(), MainActivity.class));
                 finish();
                 return true;
         }
@@ -78,6 +73,7 @@ public class CreatePublicationActivity extends AppCompatActivity implements View
     }
 
     private void createPost (){
+        showProgressDialog();
         AndroidNetworking
                 .post(CREATE_PUBLICATION_URL)
                 .addHeaders("token", PreferencesEditor.getStringPreference(this, "token", ""))
@@ -90,18 +86,21 @@ public class CreatePublicationActivity extends AppCompatActivity implements View
                 .getAsJSONObject(new JSONObjectRequestListener() {
                     @Override
                     public void onResponse(JSONObject response) {
+                        dismissProgressDialog();
                         Base responseObject = gson.fromJson(response.toString(), Base.class);
                         if (responseObject.getStatusBody().getCode().equals("0")){
-                            Toast.makeText(getApplicationContext(), "Registrado correctamente", Toast.LENGTH_SHORT).show();
+                            // Toast.makeText(getApplicationContext(), "Registrado correctamente", Toast.LENGTH_SHORT).show();
                             setResult(RESULT_OK, new Intent(getApplicationContext(), PublicationActivity.class));
                             finish();
                         }else{
-                            Toast.makeText(getApplicationContext(), responseObject.getStatusBody().getMessage(), Toast.LENGTH_SHORT).show();
+                            Log.d(tag, responseObject.getStatusBody().getMessage());
+                            // Toast.makeText(getApplicationContext(), responseObject.getStatusBody().getMessage(), Toast.LENGTH_SHORT).show();
                         }
                     }
 
                     @Override
                     public void onError(ANError anError) {
+                        dismissProgressDialog();
                         Log.d(tag, anError.getMessage());
                     }
                 });

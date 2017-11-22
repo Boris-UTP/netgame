@@ -106,11 +106,12 @@ public class SignUpActivity extends BaseActivity implements View.OnClickListener
                         dismissProgressDialog();
                         Base responseObject = gson.fromJson(response.toString(), Base.class);
                         if (responseObject.getStatusBody().getCode().equals("0")){
-                            Toast.makeText(getApplicationContext(), "Registrado correctamente", Toast.LENGTH_SHORT).show();
+                            // Toast.makeText(getApplicationContext(), "Registrado correctamente", Toast.LENGTH_SHORT).show();
                             setResult(RESULT_OK, new Intent(getApplicationContext(), LoginActivity.class));
                             finish();
                         }else{
-                            Toast.makeText(getApplicationContext(), responseObject.getStatusBody().getMessage(), Toast.LENGTH_SHORT).show();
+                            Log.d(tag, responseObject.getStatusBody().getMessage());
+                            // Toast.makeText(getApplicationContext(), responseObject.getStatusBody().getMessage(), Toast.LENGTH_SHORT).show();
                         }
                     }
 

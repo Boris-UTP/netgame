@@ -71,6 +71,10 @@
         <activity
             android:name=".activities.EditGamerUserActivity"
             android:label="@string/title_activity_edit_gamer_user"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.CreateCommentActivity"
+            android:label="@string/title_activity_create_comment"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

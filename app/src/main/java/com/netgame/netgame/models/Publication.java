@@ -29,7 +29,8 @@ public class Publication {
     private int favorite;
 
     public Publication() {
-
+        this.like = 0;
+        this.favorite = 0;
     }
 
     public int getId() {
@@ -91,15 +92,20 @@ public class Publication {
         bundle.putInt("idPublication", id);
         bundle.putString("title", title);
         bundle.putString("description", description);
+        bundle.putString("dateRegister", dateRegister);
+        bundle.putInt("like", like);
+        bundle.putInt("favorite", favorite);
         return bundle;
     }
 
     public static Publication from(Bundle bundle){
-
         Publication publication = new Publication();
         publication.setTitle(bundle.getString("title"))
                 .setId(bundle.getInt("idPublication"))
-                .setDescription(bundle.getString("description"));
+                .setDescription(bundle.getString("description"))
+                .setDateRegister(bundle.getString("dateRegister"))
+                .setLike(bundle.getInt("like"))
+                .setFavorite(bundle.getInt("favorite"));
         return publication;
     }
 
