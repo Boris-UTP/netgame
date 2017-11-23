@@ -42,7 +42,7 @@ public class GamesAdapter extends RecyclerView.Adapter<GamesAdapter.ViewHolder> 
 
         holder.pictureANImageView.setDefaultImageResId(R.drawable.ic_launcher_background);
         holder.pictureANImageView.setErrorImageResId(R.drawable.ic_launcher_background);
-        holder.pictureANImageView.setImageUrl(game.getImage());
+        holder.pictureANImageView.setImageUrl("http://drive.google.com/uc?export=view&id=1KLby3cHXEsSLcUcYv5BqdLFOEjFwAGSx");
 
         holder.pictureANImageView.setOnClickListener(new View.OnClickListener() {
             @Override

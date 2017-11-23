@@ -5,7 +5,7 @@ package com.netgame.netgame.network;
  */
 
 public class NetGameApiService {
-    private static final String HOST = "http://192.168.0.103:3000";
+    private static final String HOST = "http://192.168.0.117:3000";
 
     public static final String CREATE_USER_URL = String.format("%s/api/v1/user/create", HOST);
     public static final String AUTHENTICATE_URL = String.format("%s/api/v1/authorize", HOST);
