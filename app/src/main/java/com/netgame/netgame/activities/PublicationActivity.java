@@ -138,6 +138,7 @@ public class PublicationActivity extends AppCompatActivity implements View.OnCli
                 break;
             case 1:
                 Intent intentEvent = new Intent(getApplicationContext(), CreateEventActivity.class);
+                intentEvent.putExtras(game.toBundle());
                 startActivityForResult(intentEvent, 1);
                 break;
         }

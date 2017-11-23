@@ -30,26 +30,29 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.ViewHolder
         return this;
     }
 
-    public EventsAdapter (List<Event> events){
+    public EventsAdapter(List<Event> events) {
         this.events = events;
     }
 
     @Override
     public EventsAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.card_event,parent,false));
+        return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.card_event, parent, false));
     }
 
     @Override
     public void onBindViewHolder(EventsAdapter.ViewHolder holder, int position) {
-        Event event = events.get(position);
+        final Event event = events.get(position);
 
         holder.titleTextView.setText(event.getTitle());
         holder.descriptionTextView.setText(event.getDescription());
-
+        holder.dateTextView.setText(event.getDateEvent());
+        holder.userNameTextView.setText(event.getName());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                view.getContext().startActivity(new Intent(view.getContext(), EventActivity.class));
+                Intent intent = new Intent(view.getContext(), EventActivity.class);
+                intent.putExtras(event.toBundle());
+                view.getContext().startActivity(intent);
             }
         });
     }
@@ -64,12 +67,14 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.ViewHolder
         TextView titleTextView;
         TextView descriptionTextView;
         TextView dateTextView;
+        TextView userNameTextView;
 
         public ViewHolder(View itemView) {
             super(itemView);
             titleTextView = itemView.findViewById(R.id.titleTextView);
             descriptionTextView = itemView.findViewById(R.id.descriptionTextView);
             dateTextView = itemView.findViewById(R.id.dateTextView);
+            userNameTextView = itemView.findViewById(R.id.userNameTextView);
         }
     }
 }

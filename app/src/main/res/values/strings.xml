@@ -18,9 +18,9 @@
     <string name="title_activity_publication">PublicationActivity</string>
     <string name="title_activity_post">Publicación</string>
     <string name="title_activity_detail_publication">Publicación</string>
-    <string name="title_activity_create_event">CreateEventActivity</string>
+    <string name="title_activity_create_event">Evento</string>
     <string name="title_activity_editar_uauario">Editar Cabina</string>
     <string name="title_activity_edit_gamer_user">Editar Gamer</string>
     <string name="title_activity_create_comment">Comentar</string>
-    <string name="title_activity_event">EventActivity</string>
+    <string name="title_activity_event">Evento</string>
 </resources>
