@@ -109,6 +109,7 @@ public class SignUpActivity extends BaseActivity implements View.OnClickListener
                             setResult(RESULT_OK, new Intent(getApplicationContext(), LoginActivity.class));
                             finish();
                         }else{
+                            Toast.makeText(getApplicationContext(), responseObject.getStatusBody().getMessage(), Toast.LENGTH_SHORT).show();
                             Log.d(tag, responseObject.getStatusBody().getMessage());
                             // Toast.makeText(getApplicationContext(), responseObject.getStatusBody().getMessage(), Toast.LENGTH_SHORT).show();
                         }

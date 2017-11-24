@@ -40,9 +40,11 @@ public class GamesAdapter extends RecyclerView.Adapter<GamesAdapter.ViewHolder> 
         Game game = games.get(position);
         holder.gameTitleTextView.setText(game.getName());
 
+        holder.pictureANImageView.setDrawingCacheEnabled(true);
         holder.pictureANImageView.setDefaultImageResId(R.drawable.ic_launcher_background);
         holder.pictureANImageView.setErrorImageResId(R.drawable.ic_launcher_background);
-        holder.pictureANImageView.setImageUrl("http://drive.google.com/uc?export=view&id=1KLby3cHXEsSLcUcYv5BqdLFOEjFwAGSx");
+        holder.pictureANImageView.setImageUrl(game.getImage());
+
 
         holder.pictureANImageView.setOnClickListener(new View.OnClickListener() {
             @Override
