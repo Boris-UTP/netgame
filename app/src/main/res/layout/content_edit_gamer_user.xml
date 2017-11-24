@@ -6,26 +6,35 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.netgame.netgame.activities.EditGamerUserActivity"
-    tools:showIn="@layout/activity_edit_gamer_user">
+    tools:showIn="@layout/activity_edit_gamer_user"
+    android:padding="@dimen/default_margin">
 
     <EditText
-        android:id="@+id/usernameEditText"
+        android:id="@+id/nickNameEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nombre del Usuario"
+        android:hint="Nick Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+         />
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        app:layout_constraintTop_toBottomOf="@id/nickNameEditText"
         />
 
     <EditText
-        android:id="@+id/passwordEditText"
+        android:id="@+id/lastNameEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Contraseña del Usuario"
+        android:hint="Apellido"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/usernameEditText"
+        app:layout_constraintTop_toBottomOf="@id/nameEditText"
         />
 
 

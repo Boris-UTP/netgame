@@ -94,7 +94,6 @@ public class SignUpActivity extends BaseActivity implements View.OnClickListener
         showProgressDialog();
         AndroidNetworking
                 .post(CREATE_USER_URL)
-                // .addHeaders("token", getResources().getString(R.string.token))
                 .addBodyParameter("userName", userNameEditText.getText().toString())
                 .addBodyParameter("password", passwordEditText.getText().toString())
                 .addBodyParameter("userType", String.valueOf(userTypeSpinner.getSelectedItemPosition() + 1))

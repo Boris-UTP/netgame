@@ -5,7 +5,9 @@ package com.netgame.netgame.network;
  */
 
 public class NetGameApiService {
-    private static final String HOST = "http://192.168.0.117:3000";
+    // private static final String HOST = "http://192.168.0.32:3000";
+    private static final String HOST = "https://api-rest-netgame.herokuapp.com";
+
 
     public static final String CREATE_USER_URL = String.format("%s/api/v1/user/create", HOST);
     public static final String AUTHENTICATE_URL = String.format("%s/api/v1/authorize", HOST);
@@ -24,4 +26,15 @@ public class NetGameApiService {
     public static final String CREATE_EVENT_URL = String.format("%s/api/v1/game/event/create", HOST);
     public static final String ASSISTANCE_USER_URL = String.format("%s/api/v1/game/event/assistance", HOST);
 
+
+    public static final String CABIN_URL = String.format("%s/api/v1/user/cabin", HOST);
+    public static final String GAMER_URL = String.format("%s/api/v1/user/gamer", HOST);
+
+    public static final String CABINS_URL = String.format("%s/api/v1/cabins", HOST);
+
+    public static final String PUT_INFO_CABIN_URL = String.format("%s/api/v1/user/cabin", HOST);
+    public static final String PUT_LOCATION_CABIN_URL = String.format("%s/api/v1/user/cabin/location", HOST);
+
+
+    public static final String PUT_INFO_GAMER_URL = String.format("%s/api/v1/user/gamer", HOST);
 }

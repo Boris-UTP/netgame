@@ -1,38 +1,40 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.netgame.netgame.fragments.EditCabinUserFragment">
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/default_margin"
+        android:paddingRight="@dimen/default_margin">
 
         <EditText
-           android:id="@+id/usernameEditText"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:hint="Nombre de Usuario"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            />
-        <EditText
-            android:id="@+id/passwordEditText"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:hint="Password  Usuario"
-            app:layout_constraintTop_toBottomOf="@id/usernameEditText"
-            app:layout_constraintLeft_toLeftOf="parent"
-            />
-        <EditText
             android:id="@+id/addressEditText"
-            android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:hint="Direccion"
+            android:layout_height="wrap_content"
+            android:hint="Dirección"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/passwordEditText"
-            />
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/spamTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:text="Actualmente esta (Cerrado / Abierto)"
+            app:layout_constraintTop_toBottomOf="@id/addressEditText" />
+
+        <Switch
+            android:id="@+id/isOpenSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:checked="true"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/addressEditText" />
 
     </android.support.constraint.ConstraintLayout>
 
