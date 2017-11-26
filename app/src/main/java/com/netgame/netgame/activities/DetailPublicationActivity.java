@@ -28,6 +28,7 @@ import com.google.gson.reflect.TypeToken;
 import com.netgame.netgame.R;
 import com.netgame.netgame.adapters.CommentsAdapter;
 import com.netgame.netgame.commons.PreferencesEditor;
+import com.netgame.netgame.commons.UtilsIO;
 import com.netgame.netgame.models.Base;
 import com.netgame.netgame.models.Comment;
 import com.netgame.netgame.models.Publication;
@@ -88,7 +89,7 @@ public class DetailPublicationActivity extends BaseActivity implements SwipeRefr
 
         titleTextView.setText(publication.getTitle());
         descriptionTextView.setText(publication.getDescription());
-        dateTextView.setText(publication.getDateRegister());
+        dateTextView.setText(UtilsIO.formatStringToString(publication.getDateRegister(), "yyyy-MM-dd'T'HH:mm:ss", "yyyy-MM-dd"));
 
         setColorLike();
         setColorFavorite();

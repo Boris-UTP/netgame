@@ -20,6 +20,7 @@ import com.netgame.netgame.R;
 import com.netgame.netgame.activities.DetailPublicationActivity;
 import com.netgame.netgame.activities.PublicationActivity;
 import com.netgame.netgame.commons.PreferencesEditor;
+import com.netgame.netgame.commons.UtilsIO;
 import com.netgame.netgame.models.Base;
 import com.netgame.netgame.models.Publication;
 
@@ -53,7 +54,8 @@ public class PublicationsAdapter extends RecyclerView.Adapter<PublicationsAdapte
         final Publication publication = publications.get(position);
         holder.titleTextView.setText(publication.getTitle());
         holder.descriptionTextView.setText(publication.getDescription());
-        holder.dateTextView.setText(publication.getDateRegister());
+        holder.dateTextView.setText(UtilsIO.formatStringToString(publication.getDateRegister(), "yyyy-MM-dd'T'HH:mm:ss", "yyyy-MM-dd"));
+        // holder.dateTextView.setText(publication.getDateRegister());
         holder.setIconStartImageView(publication.getFavorite());
         holder.setIconThumbUpImageView(publication.getLike());
 

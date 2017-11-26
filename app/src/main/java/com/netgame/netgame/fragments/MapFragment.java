@@ -283,7 +283,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
             LatLng latLng = new LatLng(location.getLatitude(), location.getLongitude());
 
             if (PreferencesEditor.getBooleanPreference(getActivity(), "change_location_zoom", true)){
-                cameraUpdate = CameraUpdateFactory.newLatLngZoom(latLng, 12);
+                cameraUpdate = CameraUpdateFactory.newLatLngZoom(latLng, 15);
                 mMap.animateCamera(cameraUpdate);
                 PreferencesEditor.savePreference(getActivity(),"change_location_zoom", false);
             }
