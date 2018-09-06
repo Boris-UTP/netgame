@@ -1,8 +1,0 @@
-<application>
-  <component name="LanguageInjectionConfiguration">
-    <injection language="JAVA" injector-id="xml">
-      <display-name>android.support.constraint.ConstraintLayout/@context</display-name>
-      <place><![CDATA[xmlAttribute().withLocalName(string().equalTo("context")).withNamespace(string().equalTo("http://schemas.android.com/tools")).withParent(xmlTag().withLocalName(string().matches("android.support.constraint.ConstraintLayout")))]]></place>
-    </injection>
-  </component>
-</application>
